@@ -21,13 +21,6 @@ import collegeapplication.common.ChangePasswordDialog;
 import collegeapplication.cource.CourceData;
 import collegeapplication.faculty.FacultyMain;
 
-/*
- * Title : ViewStudentPanel.java
- * Created by : Ajaysinh Rathod
- * Purpose : Displaying all the details of student
- * Mail : ajaysinhrathod1290@gmail.com
- */
-
 @SuppressWarnings("serial")
 public class ViewStudentPanel extends JPanel {
 

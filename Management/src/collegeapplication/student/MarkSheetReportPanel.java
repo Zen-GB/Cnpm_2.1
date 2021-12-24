@@ -39,13 +39,6 @@ import collegeapplication.cource.CourceData;
 import collegeapplication.faculty.FacultyMain;
 import collegeapplication.subject.SubjectData;
 
-/*
- * Title : MarkSheetReportPanel.java
- * Created by : Ajaysinh Rathod
- * Purpose : To display all students marks in class/subject/student wice
- * Mail : ajaysinhrathod1290@gmail.com
- */
-
 
 @SuppressWarnings("serial")
 public class MarkSheetReportPanel extends JPanel implements ActionListener {

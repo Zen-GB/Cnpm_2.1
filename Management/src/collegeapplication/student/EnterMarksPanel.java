@@ -36,12 +36,6 @@ import collegeapplication.cource.CourceData;
 import collegeapplication.faculty.FacultyMain;
 import collegeapplication.subject.SubjectData;
 
-/*
- * Title : EnterMarksPanel.java
- * Created by : Ajaysinh Rathod
- * Purpose : For entering marks of student
- * Mail : ajaysinhrathod1290@gmail.com
- */
 
 @SuppressWarnings("serial")
 public class EnterMarksPanel extends JPanel implements ActionListener

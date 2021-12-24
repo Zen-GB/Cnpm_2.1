@@ -35,8 +35,8 @@ public class AdminProfilePanel extends JPanel {
 	public AdminProfilePanel(AdminMain am)
 	{
 		this();
-		headinglabel.setText("Thông tin Admin");
-		JButton editdetailsbutton = new JButton("Chỉnh sửa chi tiết");
+		headinglabel.setText("Thong tin admin");
+		JButton editdetailsbutton = new JButton("Chinh sua chi tiet");
 		editdetailsbutton.setFocusPainted(false);
 		editdetailsbutton.setBorder(new EmptyBorder(0, 0, 0, 0));
 		editdetailsbutton.setForeground(new Color(0, 139, 139));
@@ -53,7 +53,7 @@ public class AdminProfilePanel extends JPanel {
 		panel.add(editdetailsbutton);
 		
 		
-		JButton editlinksbutton = new JButton("Chỉnh sửa liên kết");
+		JButton editlinksbutton = new JButton("Chinh sua lien ket");
 		editlinksbutton.setCursor(new Cursor(Cursor.HAND_CURSOR));
 		editlinksbutton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
@@ -81,7 +81,7 @@ public class AdminProfilePanel extends JPanel {
 		panel.setBounds(10, 0, 1096, 183);
 		add(panel);
 		panel.setLayout(null);
-		 headinglabel = new JLabel("Liên lạc với chúng tối");
+		 headinglabel = new JLabel("Contact us");
 		headinglabel.setIcon(null);
 		headinglabel.setBounds(10, 65, 272, 44);
 		panel.add(headinglabel);
@@ -101,7 +101,7 @@ public class AdminProfilePanel extends JPanel {
 		collagelogolabel.setBounds(24, 213, 200, 180);
 		add(collagelogolabel);
 		
-		JLabel lblCollageName = new JLabel("Tên trường  :  ");
+		JLabel lblCollageName = new JLabel("University name  :  ");
 		lblCollageName.setHorizontalAlignment(SwingConstants.RIGHT);
 		lblCollageName.setFont(new Font("Segoe UI", Font.PLAIN, 20));
 		lblCollageName.setBorder(new LineBorder(Color.LIGHT_GRAY));
@@ -116,7 +116,7 @@ public class AdminProfilePanel extends JPanel {
 		collagenamelable.setBounds(423, 213, 672, 48);
 		add(collagenamelable);
 		
-		JLabel lblEmailId = new JLabel("Địa chỉ Email  :  ");
+		JLabel lblEmailId = new JLabel("Email address  :  ");
 		lblEmailId.setHorizontalAlignment(SwingConstants.RIGHT);
 		lblEmailId.setFont(new Font("Segoe UI", Font.PLAIN, 20));
 		lblEmailId.setBorder(new LineBorder(Color.LIGHT_GRAY));
@@ -131,7 +131,7 @@ public class AdminProfilePanel extends JPanel {
 		emailidlabel.setBounds(423, 260, 672, 48);
 		add(emailidlabel);
 		
-		JLabel lblContactNumber = new JLabel("Số điện thoại  :  ");
+		JLabel lblContactNumber = new JLabel("Phone number  :  ");
 		lblContactNumber.setHorizontalAlignment(SwingConstants.RIGHT);
 		lblContactNumber.setFont(new Font("Segoe UI", Font.PLAIN, 20));
 		lblContactNumber.setBorder(new LineBorder(Color.LIGHT_GRAY));
@@ -173,7 +173,7 @@ public class AdminProfilePanel extends JPanel {
 		websitelabel.setBounds(423, 354, 672, 48);
 		add(websitelabel);
 		
-		JLabel lblAddress = new JLabel("Địa chỉ  :  ");
+		JLabel lblAddress = new JLabel("Dia chi  :  ");
 		lblAddress.setHorizontalAlignment(SwingConstants.RIGHT);
 		lblAddress.setFont(new Font("Segoe UI", Font.PLAIN, 20));
 		lblAddress.setBorder(new LineBorder(Color.LIGHT_GRAY));

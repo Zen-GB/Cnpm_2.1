@@ -16,12 +16,6 @@ import collegeapplication.common.Notification;
 import collegeapplication.common.NotificationData;
 import collegeapplication.common.TimeUtil;
 
-/*
- * Title : FacultyData.java
- * Created by : Ajaysinh Rathod
- * Purpose : Handling all the data related to faculty
- * Mail : ajaysinhrathod1290@gmail.com
- */
 public class FacultyData 
 {
 	static Connection con=DataBaseConnection.getConnection();

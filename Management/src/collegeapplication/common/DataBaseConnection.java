@@ -2,13 +2,6 @@ package collegeapplication.common;
 
 import java.sql.*;
 
-/*
- * Title : DataBaseConnection.java
- * Created by : Ajaysinh Rathod
- * Purpose : For database connection
- * Mail : ajaysinhrathod1290@gmail.com
- */
-
 public class DataBaseConnection {
 	
 	static Connection con=null;

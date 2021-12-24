@@ -132,7 +132,7 @@ public class AdminData {
 		}
 		else
 		{
-			JOptionPane.showMessageDialog(null, "Incorrect Userid or Password","Error",JOptionPane.ERROR_MESSAGE);
+			JOptionPane.showMessageDialog(null, "Sai tai khoan hoac mat khau","Loi",JOptionPane.ERROR_MESSAGE);
 		}
 		return false;
 			

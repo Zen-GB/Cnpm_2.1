@@ -13,14 +13,6 @@ import javax.swing.JPasswordField;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 import javax.swing.text.Document;  
-  
-
-/*
- * Title : HintPasswordField.java
- * Created by : Ajaysinh Rathod
- * Purpose : For giving hint to user in password field
- * Mail : ajaysinhrathod1290@gmail.com
- */
 
 @SuppressWarnings("serial")
 public class HintPasswordField extends JPasswordField {  

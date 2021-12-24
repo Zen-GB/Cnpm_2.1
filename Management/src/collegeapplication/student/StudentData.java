@@ -17,13 +17,6 @@ import collegeapplication.common.NotificationData;
 import collegeapplication.common.TimeUtil;
 import collegeapplication.subject.SubjectData;
 
-/*
- * Title : StudentData.java
- * Created by : Ajaysinh Rathod
- * Purpose : Handling all the data related to student
- * Mail : ajaysinhrathod1290@gmail.com
- */
-
 public class StudentData 
 {
 	

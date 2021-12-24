@@ -9,14 +9,6 @@ import collegeapplication.faculty.FacultyData;
 import collegeapplication.student.StudentData;
 
 
-/*
- * Title : User.java
- * Created by : Ajaysinh Rathod
- * Purpose : Binding data related to login activity of students and faculties
- * Mail : ajaysinhrathod1290@gmail.com
- */
-
-
 class User extends Cource
 {
 	

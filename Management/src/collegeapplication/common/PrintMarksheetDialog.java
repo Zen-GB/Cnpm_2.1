@@ -31,14 +31,6 @@ import collegeapplication.faculty.FacultyMain;
 import collegeapplication.student.Student;
 import collegeapplication.student.StudentMain;
 
-
-/*
- * Title : PrintPageDialog.java
- * Created by : Ajaysinh Rathod
- * Purpose : To download student marksheet in selected format 
- * Mail : ajaysinhrathod1290@gmail.com
- */
-
 @SuppressWarnings("serial")
 public class PrintMarksheetDialog extends JDialog {
 
@@ -127,7 +119,7 @@ public class PrintMarksheetDialog extends JDialog {
 		getContentPane().setBackground(new Color(255, 255, 255));
 		setBackground(new Color(220, 220, 220));
 		setResizable(false);
-		setTitle("Print Marksheet");
+		setTitle("In bang diem");
 		setBounds(100, 100, 516, 294);
 		getContentPane().setLayout(null);
 		contentPanel.setBorder(new EmptyBorder(0, 0, 0, 0));
@@ -329,7 +321,7 @@ public class PrintMarksheetDialog extends JDialog {
 		
 		filedownloadedlabel = new JLabel();
 		filedownloadedlabel.setIcon(new ImageIcon(".\\assets\\downloadedbutton.png"));
-		filedownloadedlabel.setText("Png Flie Downloaded Succesfully");
+		filedownloadedlabel.setText("Ảnh được down thanh cong");
 		filedownloadedlabel.setForeground(new Color(46, 139, 87));
 		filedownloadedlabel.setFont(new Font("Segoe UI", Font.BOLD, 13));
 		filedownloadedlabel.setVisible(false);
@@ -342,7 +334,7 @@ public class PrintMarksheetDialog extends JDialog {
 		getContentPane().add(panel);
 		panel.setLayout(null);
 		
-		JLabel lblPrintMarksheet = new JLabel("Print Marksheet");
+		JLabel lblPrintMarksheet = new JLabel("In bang diem");
 		lblPrintMarksheet.setBounds(76, 11, 358, 25);
 		panel.add(lblPrintMarksheet);
 		lblPrintMarksheet.setForeground(new Color(255, 255, 255));
@@ -368,11 +360,11 @@ public class PrintMarksheetDialog extends JDialog {
 		filedownloadedlabel.setVisible(true);
 		if(button.getText().contains("Print"))
 		{
-			filedownloadedlabel.setText(" File Printed Successfully");
+			filedownloadedlabel.setText(" In file thanh cong");
 		}
 		else
 		{
-		filedownloadedlabel.setText(button.getText()+" File Downloaded Successfully");
+		filedownloadedlabel.setText(button.getText()+" Download file thanh cong");
 		}
 	}
 	

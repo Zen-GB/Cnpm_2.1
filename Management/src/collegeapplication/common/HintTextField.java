@@ -13,13 +13,6 @@ import javax.swing.JTextField;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 import javax.swing.text.Document;  
-  
-/*
- * Title : HintTextField.java
- * Created by : Ajaysinh Rathod
- * Purpose : For giving hint to user in text field
- * Mail : ajaysinhrathod1290@gmail.com
- */
 
 @SuppressWarnings("serial")
 public class HintTextField extends JTextField {  
@@ -70,28 +63,7 @@ public class HintTextField extends JTextField {
     		
     		);
     
-//    this.addFocusListener(new FocusAdapter() {  
-//  
-//      @Override  
-//      public void focusGained(FocusEvent e) {  
-//        if (getText().equals(hint)) {  
-//          setText("");  
-//        } else {  
-//          setText(getText());  
-//          
-//        }  
-//      }  
-//  
-//      @Override  
-//      public void focusLost(FocusEvent e) {  
-//        if (getText().equals(hint)|| getText().length()==0) {  
-//          setText(hint);  
-//        } else {  
-//          setText(getText());  
-//        }  
-//      }  
-//    });  
-  
+
   }  
 	private class MyDocumentListener implements DocumentListener {
     public void insertUpdate(DocumentEvent e) {
@@ -101,7 +73,7 @@ public class HintTextField extends JTextField {
         updateLog(e, "removed from");
     }
     public void changedUpdate(DocumentEvent e) {
-        //Plain text components do not fire these events
+
     }
     public void updateLog(DocumentEvent e, String action)
     {

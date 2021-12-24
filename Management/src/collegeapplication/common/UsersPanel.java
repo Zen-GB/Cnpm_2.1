@@ -27,13 +27,6 @@ import collegeapplication.student.StudentData;
 import collegeapplication.student.ViewStudentPanel;
 
 
-/*
- * Title : UserPanel.java
- * Created by : Ajaysinh Rathod
- * Purpose : To displaying users activity 
- * Mail : ajaysinhrathod1290@gmail.com
- */
-
 @SuppressWarnings("serial")
 public class UsersPanel extends JPanel {
 

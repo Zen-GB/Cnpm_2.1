@@ -30,13 +30,6 @@ import collegeapplication.faculty.FacultyMain;
 import collegeapplication.student.StudentMain;
 import net.proteanit.sql.DbUtils;
 
-/*
- * Title : SubjectPanel.java
- * Created by : Ajaysinh Rathod
- * Purpose : Displaying all the subject in given cource and sem
- * Mail : ajaysinhrathod1290@gmail.com
- */
-
 @SuppressWarnings("serial")
 public class SubjectPanel extends JPanel implements ActionListener
 {

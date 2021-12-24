@@ -2,12 +2,6 @@ package collegeapplication.student;
 
 import collegeapplication.subject.Subject;
 
-/*
- * Title : UserData.java
- * Created by : Ajaysinh Rathod
- * Purpose : For binding all the data related to attandance
- * Mail : ajaysinhrathod1290@gmail.com
- */
 public class Attandance extends Subject
 {
 	private String studentname;

@@ -28,13 +28,6 @@ import javax.swing.table.DefaultTableCellRenderer;
 
 import net.proteanit.sql.DbUtils;
 
-/*
- * Title : AddSubjectDialog.java
- * Created by : Ajaysinh Rathod
- * Purpose : For adding new subject to cource
- * Mail : ajaysinhrathod1290@gmail.com
- */
-
 @SuppressWarnings("serial")
 public class AddSubjectDialog extends JDialog implements ActionListener
 {

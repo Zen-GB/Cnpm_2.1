@@ -24,13 +24,6 @@ import collegeapplication.student.Student;
 import collegeapplication.student.StudentData;
 import collegeapplication.subject.SubjectData;
 
-/*
- * Title : HomePanel.java
- * Created by : Ajaysinh Rathod
- * Purpose : Home Page
- * Mail : ajaysinhrathod1290@gmail.com
- */
-
 @SuppressWarnings("serial")
 public class HomePanel extends JPanel implements ActionListener {
 	/**
@@ -277,9 +270,9 @@ public class HomePanel extends JPanel implements ActionListener {
 
 	public void setLastLogin(String lastlogin) {
 		if (lastlogin == null || lastlogin.isEmpty()) {
-			this.lastloginlabel.setText("last login : First Time");
+			this.lastloginlabel.setText("Lan dang nhap : Lần đầu");
 		} else {
-			this.lastloginlabel.setText("last login : " + lastlogin);
+			this.lastloginlabel.setText("lan dang nhap : " + lastlogin);
 //		this.timedifflabel.setText(TimeUtil.getDateDifference(lastlogin));
 		}
 	}

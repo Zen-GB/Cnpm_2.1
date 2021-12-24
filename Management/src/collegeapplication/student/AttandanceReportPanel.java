@@ -35,12 +35,6 @@ import collegeapplication.cource.CourceData;
 import collegeapplication.faculty.FacultyMain;
 import collegeapplication.subject.SubjectData;
 
-/*
- * Title : AttandanceReportPanel.java
- * Created by : Ajaysinh Rathod
- * Purpose : For displaying student attandance according to class/subject/student wice
- * Mail : ajaysinhrathod1290@gmail.com
- */
 
 public class AttandanceReportPanel extends JPanel implements ActionListener {
 

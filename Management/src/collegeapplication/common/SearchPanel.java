@@ -39,14 +39,6 @@ import collegeapplication.student.ViewStudentPanel;
 import net.proteanit.sql.DbUtils;
 
 
-/*
- * Title : SearchPanel.java
- * Created by : Ajaysinh Rathod
- * Purpose : For searching student of faculty
- * Mail : ajaysinhrathod1290@gmail.com
- */
-
-
 @SuppressWarnings("serial")
 public class SearchPanel extends JPanel implements ActionListener {
 

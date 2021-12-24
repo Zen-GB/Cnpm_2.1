@@ -24,12 +24,6 @@ import collegeapplication.student.StudentPanel;
 import collegeapplication.student.ViewStudentPanel;
 
 
-/*
- * Title : PhotoViewPanel.java
- * Created by : Ajaysinh Rathod
- * Purpose : To displaying students and faculties image
- * Mail : ajaysinhrathod1290@gmail.com
- */
 @SuppressWarnings("serial")
 public class PhotoViewPanel extends JPanel {
 	int xpos[];
@@ -170,7 +164,7 @@ public class PhotoViewPanel extends JPanel {
 				  profilepiclabel[i][j].setBounds(0, 0, panel[i][j].getWidth()-10,panel[i][j].getHeight()-60);
 				  profilepiclabel[i][j].setBorder(new LineBorder(Color.LIGHT_GRAY));
 				  profilepiclabel[i][j].setHorizontalAlignment(SwingConstants.CENTER);
-				  profilepiclabel[i][j].setText("image");
+				  profilepiclabel[i][j].setText("Anh");
 				  profilepiclabel[i][j].setIcon(new ImageIcon(f.getProfilePic(profilepiclabel[i][j].getWidth()+((maxphotosinrow*10)/4+1),profilepiclabel[i][j].getHeight())));
 				  
 				
@@ -184,7 +178,7 @@ public class PhotoViewPanel extends JPanel {
 				  panel[i][j].add(namelabel[i][j]);
 				  degreelabel[i][j]=new JLabel();
 				  degreelabel[i][j].setVerticalAlignment(SwingConstants.TOP);
-				  if(f.getPosition().equals("Not Assigned"))
+				  if(f.getPosition().equals("Chưa nhận môn"))
 				  {
 				  degreelabel[i][j].setText("");
 				  }
@@ -312,7 +306,7 @@ public class PhotoViewPanel extends JPanel {
 				  profilepiclabel[i][j].setBounds(0, 0, panel[i][j].getWidth(),panel[i][j].getHeight()-60);
 				  profilepiclabel[i][j].setBorder(new LineBorder(Color.LIGHT_GRAY));
 				  profilepiclabel[i][j].setHorizontalAlignment(SwingConstants.CENTER);
-				  profilepiclabel[i][j].setText("image");
+				  profilepiclabel[i][j].setText("Ảnh");
 				  profilepiclabel[i][j].setIcon(new ImageIcon(s.getProfilePic(profilepiclabel[i][j].getWidth()+((maxphotosinrow*10)/4+1),profilepiclabel[i][j].getHeight())));
 				  
 				

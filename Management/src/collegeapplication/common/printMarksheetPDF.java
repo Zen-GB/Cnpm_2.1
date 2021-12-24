@@ -21,14 +21,6 @@ import collegeapplication.admin.AdminMain;
 import collegeapplication.faculty.FacultyMain;
 import collegeapplication.student.StudentMain;
 
-/*
- * Title : PrintPDF.java
- * Created by : Ajaysinh Rathod
- * Purpose : For printing marksheet in PDF format
- * Reference : https://stackoverflow.com/ 
- * Mail : ajaysinhrathod1290@gmail.com
- */
-
 public class printMarksheetPDF implements Printable ,ActionListener
 {
 	private AdminMain am;

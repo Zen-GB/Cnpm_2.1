@@ -31,12 +31,6 @@ import collegeapplication.common.PrintMarksheetDialog;
 import collegeapplication.cource.CourceData;
 import collegeapplication.faculty.FacultyMain;
 
-/*
- * Title : MarkSheetPanel.java
- * Created by : Ajaysinh Rathod
- * Purpose : For displaying student marksheet
- * Mail : ajaysinhrathod1290@gmail.com
- */
 @SuppressWarnings("serial")
 public class MarkSheetPanel extends JPanel {
 

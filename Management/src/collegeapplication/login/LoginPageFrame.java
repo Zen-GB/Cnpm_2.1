@@ -27,12 +27,7 @@ import collegeapplication.admin.Admin;
 import collegeapplication.admin.AdminData;
 import collegeapplication.common.DataBaseConnection;
 
-/*
- * Title : LoginPageFrame.java
- * Created by : Ajaysinh Rathod
- * Purpose : Main login frame
- * Mail : ajaysinhrathod1290@gmail.com
- */
+
 @SuppressWarnings("serial")
 public class LoginPageFrame extends JFrame implements ActionListener 
 {

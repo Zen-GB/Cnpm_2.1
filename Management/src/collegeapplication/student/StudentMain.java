@@ -48,13 +48,6 @@ import collegeapplication.login.LoginPageFrame;
 import collegeapplication.subject.AssignSubjectPanel;
 import collegeapplication.subject.SubjectPanel;
 
-/*
- * Title : StudentMain.java
- * Created by : Ajaysinh Rathod
- * Purpose : Student Main Frame
- * Mail : ajaysinhrathod1290@gmail.com
- */
-
 @SuppressWarnings("serial")
 public class StudentMain extends JFrame  implements ActionListener
 {

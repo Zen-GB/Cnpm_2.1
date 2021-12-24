@@ -11,14 +11,6 @@ import collegeapplication.faculty.Faculty;
 import collegeapplication.student.Student;
 
 
-/*
- * Title : UserData.java
- * Created by : Ajaysinh Rathod
- * Purpose : For getting all the data related to user login activity
- * Mail : ajaysinhrathod1290@gmail.com
- */
-
-
 public class UserData {
 	Connection con=DataBaseConnection.getConnection();
 			

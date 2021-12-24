@@ -65,7 +65,7 @@ public class ChangePasswordDialog extends JDialog {
 			else if(!s.comparePassword(oldpasswordfield.getText()))
 			{
 				showerror(oldpasswordfield);
-				lblError.setText("Mật khẩu sai");
+				lblError.setText("Sai mat khau");
 			}
 			else if(newpasswordfield.getText().isEmpty())
 			{
@@ -78,14 +78,14 @@ public class ChangePasswordDialog extends JDialog {
 			else if(!newpasswordfield.getText().equals(newpasswordfield2.getText()))
 			{
 				showerror(newpasswordfield2);
-				lblError.setText("Mật khẩu không trùng nhau");
+				lblError.setText("Mat khau khong trung nhau");
 			}
 			else 
 			{
 				int result=new StudentData().changePassword(s.getUserId(), newpasswordfield.getText());
 				if(result>0)
 				{
-				JOptionPane.showMessageDialog(null, "Đã cập nhật mật khẩu","Message",JOptionPane.INFORMATION_MESSAGE);
+				JOptionPane.showMessageDialog(null, "Mat khau da duoc cap nhat","Message",JOptionPane.INFORMATION_MESSAGE);
 				this.dispose();
 				}
 				
@@ -106,7 +106,7 @@ public class ChangePasswordDialog extends JDialog {
 			else if(!f.comparePassword(oldpasswordfield.getText()))
 			{
 				showerror(oldpasswordfield);
-				lblError.setText("Sai mật khẩu");
+				lblError.setText("Sai mat khau");
 			}
 			else if(newpasswordfield.getText().isEmpty())
 			{
@@ -119,14 +119,14 @@ public class ChangePasswordDialog extends JDialog {
 			else if(!newpasswordfield.getText().equals(newpasswordfield2.getText()))
 			{
 				showerror(newpasswordfield2);
-				lblError.setText("Mật khẩu không trùng");
+				lblError.setText("Mat khau khong trung");
 			}
 			else 
 			{
 				int result=new FacultyData().changePassword(f.getFacultyId()+"", newpasswordfield.getText());
 				if(result>0)
 				{
-				JOptionPane.showMessageDialog(null, "Mật khẩu đã được cập nhật","Message",JOptionPane.INFORMATION_MESSAGE);
+				JOptionPane.showMessageDialog(null, "MK da duoc cap nhat","Message",JOptionPane.INFORMATION_MESSAGE);
 				this.dispose();
 				}
 				
@@ -141,7 +141,7 @@ public class ChangePasswordDialog extends JDialog {
 		setBounds(100, 100, 528, 354);
 		getContentPane().setLayout(null);
 		
-		headinglabel = new JLabel("Đổi mật khẩu");
+		headinglabel = new JLabel("Đoi mat khau");
 		headinglabel.setBackground(new Color(255, 178, 170));
 		headinglabel.setOpaque(true);
 		headinglabel.setFocusable(true);
@@ -151,17 +151,17 @@ public class ChangePasswordDialog extends JDialog {
 		headinglabel.setBounds(0, 0, 523, 51);
 		getContentPane().add(headinglabel);
 		
-		JLabel label1 = new JLabel("Nhập mật khẩu cũ");
+		JLabel label1 = new JLabel("Nhap mat khau cu");
 		label1.setFont(new Font("Segoe UI", Font.PLAIN, 16));
 		label1.setBounds(10, 76, 173, 33);
 		getContentPane().add(label1);
 		
-		JLabel label2 = new JLabel("Nhập mật khẩu mới");
+		JLabel label2 = new JLabel("Nhap mat khau moi");
 		label2.setFont(new Font("Segoe UI", Font.PLAIN, 16));
 		label2.setBounds(10, 139, 173, 33);
 		getContentPane().add(label2);
 		
-		JLabel label3 = new JLabel("Nhập mật khẩu mới lần nữa");
+		JLabel label3 = new JLabel("Nhap mat khau moi lan hai");
 		label3.setFont(new Font("Segoe UI", Font.PLAIN, 16));
 		label3.setBounds(10, 194, 173, 40);
 		getContentPane().add(label3);
@@ -270,7 +270,7 @@ public class ChangePasswordDialog extends JDialog {
 		contentPanel.setLayout(new FlowLayout());
 		contentPanel.setBorder(new EmptyBorder(5, 5, 5, 5));
 		
-		lblError=new JLabel("Đây là câu hỏi bắt buộc !");
+		lblError=new JLabel("Day la cau hoi bat buoc !");
 		lblError.setBorder(new MatteBorder(0, 0, 0, 0, (Color) new Color(255, 0, 0)));
 		lblError.setForeground(new Color(255, 0, 0));
 		lblError.setFont(new Font("Candara", Font.PLAIN, 15));
@@ -281,7 +281,7 @@ public class ChangePasswordDialog extends JDialog {
 	public void showerror(JComponent tf)
 	{
 		lblError.setVisible(true);
-		lblError.setText("Đây là câu hỏi bắt buộc !");
+		lblError.setText("Day la cau hoi bat buoc !");
 		lblError.setBounds(tf.getX(), tf.getY()+tf.getHeight()-5, 400,26);
 	}
 }
