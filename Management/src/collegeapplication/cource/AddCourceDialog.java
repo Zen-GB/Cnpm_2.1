@@ -18,14 +18,6 @@ import javax.swing.JTextField;
 import javax.swing.JComboBox;
 import javax.swing.DefaultComboBoxModel;
 
-
-/*
- * Title : AddCourceDialog.java
- * Created by : Ajaysinh Rathod
- * Purpose : Dialog for adding new cource
- * Mail : ajaysinhrathod1290@gmail.com
- */
-
 @SuppressWarnings("serial")
 public class AddCourceDialog extends JDialog implements ActionListener
 {
@@ -67,7 +59,7 @@ public class AddCourceDialog extends JDialog implements ActionListener
 		setBounds(100, 100, 476, 452);
 		getContentPane().setLayout(null);
 		
-		JLabel lblAddNewCource = new JLabel("Add New Cource");
+		JLabel lblAddNewCource = new JLabel("Them moi khoa hoc");
 		lblAddNewCource.setForeground(new Color(255, 255, 255));
 		lblAddNewCource.setBackground(new Color(255, 178, 170));
 		lblAddNewCource.setOpaque(true);
@@ -76,7 +68,7 @@ public class AddCourceDialog extends JDialog implements ActionListener
 		lblAddNewCource.setBounds(0, 0, 473, 55);
 		getContentPane().add(lblAddNewCource);
 		
-		JLabel lblCourceCode = new JLabel("Cource Code ");
+		JLabel lblCourceCode = new JLabel("Ma khoa hoc ");
 		lblCourceCode.setBorder(new EmptyBorder(0, 0, 0, 5));
 		lblCourceCode.setFont(new Font("Segoe UI", Font.PLAIN, 17));
 		lblCourceCode.setHorizontalAlignment(SwingConstants.LEFT);
@@ -84,7 +76,7 @@ public class AddCourceDialog extends JDialog implements ActionListener
 		lblCourceCode.setFocusable(true);
 		getContentPane().add(lblCourceCode);
 		
-		JLabel lblCourceName = new JLabel("Cource Name ");
+		JLabel lblCourceName = new JLabel("Ten khoa hoc ");
 		lblCourceName.setHorizontalAlignment(SwingConstants.LEFT);
 		lblCourceName.setFont(new Font("Segoe UI", Font.PLAIN, 17));
 		lblCourceName.setBorder(new EmptyBorder(0, 0, 0, 5));
@@ -118,18 +110,18 @@ public class AddCourceDialog extends JDialog implements ActionListener
 		
 		semoryearcombo = new JComboBox<String>();
 		semoryearcombo.setFont(new Font("Segoe UI", Font.PLAIN, 16));
-		semoryearcombo.setModel(new DefaultComboBoxModel<String>(new String[] {"---Select Sem/Year---", "sem", "year"}));
+		semoryearcombo.setModel(new DefaultComboBoxModel<String>(new String[] {"---Lua chon HK/Nam---", "HK", "Nam"}));
 		semoryearcombo.setBounds(159, 210, 292, 40);
 		getContentPane().add(semoryearcombo);
 		
-		JLabel lblTotalSemyear = new JLabel("Total Sem/Year");
+		JLabel lblTotalSemyear = new JLabel("Tong HK/Nam");
 		lblTotalSemyear.setHorizontalAlignment(SwingConstants.LEFT);
 		lblTotalSemyear.setFont(new Font("Segoe UI", Font.PLAIN, 17));
 		lblTotalSemyear.setBorder(new EmptyBorder(0, 0, 0, 5));
 		lblTotalSemyear.setBounds(10, 284, 139, 24);
 		getContentPane().add(lblTotalSemyear);
 		
-		JButton addcourcebutton = new JButton("Add Cource");
+		JButton addcourcebutton = new JButton("Them khoa hoc");
 		addcourcebutton.setBackground(new Color(255, 178, 170));
 		addcourcebutton.setForeground(new Color(255, 255, 255));
 		addcourcebutton.setFont(new Font("Segoe UI", Font.BOLD, 14));
@@ -137,7 +129,7 @@ public class AddCourceDialog extends JDialog implements ActionListener
 		addcourcebutton.addActionListener(this);
 		getContentPane().add(addcourcebutton);
 		
-		lblError=new JLabel("This is required question !");
+		lblError=new JLabel("Day la cau hoi bat buoc!");
 		lblError.setBorder(new MatteBorder(0, 0, 0, 0, (Color) new Color(255, 0, 0)));
 		lblError.setForeground(new Color(255, 0, 0));
 		lblError.setFont(new Font("Candara", Font.PLAIN, 15));
@@ -157,7 +149,7 @@ public class AddCourceDialog extends JDialog implements ActionListener
 	{
 		lblError.setForeground(Color.red);
 		lblError.setVisible(false);
-		lblError.setText("This is required question !");
+		lblError.setText("Day la cau hoi bat buoc!");
 		String courcename=courcenamefield.getText();
 		String courcecode=courcecodefield.getText();
 		String semoryear=(String) semoryearcombo.getSelectedItem();
@@ -199,20 +191,20 @@ public class AddCourceDialog extends JDialog implements ActionListener
 					{
 						lblError.setVisible(true);
 						lblError.setBounds(courcecodefield.getX(), courcecodefield.getY()+courcecodefield.getHeight(),  lblError.getWidth(), 21);
-						lblError.setText("Cource code already exist !");
+						lblError.setText("Ma khoa hoc da ton tai!");
 					}
 					else if(new CourceData().isCourceNameExist(courcename))
 					{
 						lblError.setVisible(true);
 						lblError.setBounds(courcenamefield.getX(), courcenamefield.getY()+courcenamefield.getHeight(), lblError.getWidth(), 21);
 						courcenamefield.setFocusable(true);
-						lblError.setText("Cource name already exist !");
+						lblError.setText("Ten khoa hoc da ton tai!");
 					}
 					else if(totalsemoryear<1)
 					{
 						lblError.setVisible(true);
 						lblError.setBounds(totalsemoryearfield.getX(), totalsemoryearfield.getY()+totalsemoryearfield.getHeight(),  lblError.getWidth(), 21);
-						lblError.setText("Minimun 1 sem/year required !");
+						lblError.setText("Yeu cau toi thieu 1 HK/Nam!");
 					}
 					else
 					{
@@ -234,7 +226,7 @@ public class AddCourceDialog extends JDialog implements ActionListener
 				{
 					lblError.setVisible(true);
 					lblError.setBounds(totalsemoryearfield.getX(), totalsemoryearfield.getY()+totalsemoryearfield.getHeight(), lblError.getWidth(), 21);
-					lblError.setText("Characters are not allowed !");
+					lblError.setText("Ky tu khong duoc phep!");
 				}
 				
 		

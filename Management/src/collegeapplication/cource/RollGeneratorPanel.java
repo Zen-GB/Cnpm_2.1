@@ -16,13 +16,6 @@ import javax.swing.border.LineBorder;
 
 import javax.swing.JTextField;
 
-/*
- * Title : RollGeneratorPanel.java
- * Created by : Ajaysinh Rathod
- * Purpose : Creating panel according to sem and sending to RollGeneratorDialog
- * Mail : ajaysinhrathod1290@gmail.com
- */
-
 @SuppressWarnings("serial")
 public class RollGeneratorPanel extends JPanel {
 
@@ -55,7 +48,7 @@ public class RollGeneratorPanel extends JPanel {
 		semyearlabel=new JLabel[sem];
 		textField=new JTextField[sem];
 		
-		JLabel lblCourceCode = new JLabel("Cource Code");
+		JLabel lblCourceCode = new JLabel("Ma khoa hoc");
 		lblCourceCode.setBorder(new LineBorder(new Color(192, 192, 192)));
 		lblCourceCode.setHorizontalAlignment(SwingConstants.CENTER);
 		lblCourceCode.setOpaque(true);
@@ -65,7 +58,7 @@ public class RollGeneratorPanel extends JPanel {
 		lblCourceCode.setBounds(10, 10, 166, 50);
 		add(lblCourceCode);
 		
-		JLabel lblSem = new JLabel("Sem/Year");
+		JLabel lblSem = new JLabel("HK/Nam");
 		lblSem.setBorder(new LineBorder(new Color(192, 192, 192)));
 		lblSem.setHorizontalAlignment(SwingConstants.CENTER);
 		lblSem.setOpaque(true);

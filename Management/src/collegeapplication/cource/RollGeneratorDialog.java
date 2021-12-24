@@ -19,13 +19,6 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.border.LineBorder;
 import javax.swing.border.MatteBorder;
 
-/*
- * Title : RollGeneratorDialog.java
- * Created by : Ajaysinh Rathod
- * Purpose : Dialog for generating rollnumber 
- * Mail : ajaysinhrathod1290@gmail.com
- */
-
 @SuppressWarnings("serial")
 public class RollGeneratorDialog extends JDialog implements ActionListener
 {
@@ -86,7 +79,7 @@ public class RollGeneratorDialog extends JDialog implements ActionListener
 		getContentPane().add(panel);
 		panel.setLayout(null);
 		
-		 btnSave = new JButton("Save");
+		 btnSave = new JButton("Luu");
 		 btnSave.setBorder(new EmptyBorder(0, 0, 0, 0));
 		btnSave.setFocusable(false);
 		btnSave.setBackground(new Color(255, 178, 170));
@@ -97,7 +90,7 @@ public class RollGeneratorDialog extends JDialog implements ActionListener
 		btnSave.setCursor(new Cursor(Cursor.HAND_CURSOR));
 		panel.add(btnSave);
 		
-		 lblError = new JLabel("Error : Only number allowed");
+		 lblError = new JLabel("Loi : Chi cho phep chu so");
 		lblError.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		lblError.setForeground(Color.RED);
 		lblError.setBounds(10, 11, 396, 29);
@@ -114,7 +107,7 @@ public class RollGeneratorDialog extends JDialog implements ActionListener
 		getContentPane().add(courcenamecombo);
 		
 		
-		 lblSelectCource = new JLabel("Select Course  :");
+		 lblSelectCource = new JLabel("Lua chon khoa hoc:");
 		 lblSelectCource.setHorizontalAlignment(SwingConstants.RIGHT);
 		lblSelectCource.setForeground(new Color(0, 0, 0));
 		lblSelectCource.setFont(new Font("Segoe UI", Font.PLAIN, 18));
@@ -187,7 +180,7 @@ public class RollGeneratorDialog extends JDialog implements ActionListener
 			{
 				rp.textField[i].setBorder(new LineBorder(Color.RED,1));
 				lblError.setVisible(true);
-				lblError.setText("Error : Enter Roll Number in sem/year "+(i+1));
+				lblError.setText("Loi : Enter Roll Number in sem/year "+(i+1));
 				return true;
 			}
 			else
@@ -201,7 +194,7 @@ public class RollGeneratorDialog extends JDialog implements ActionListener
 				{
 					rp.textField[i].setBorder(new LineBorder(Color.RED,1));
 					lblError.setVisible(true);
-					lblError.setText("Must be a Number !");
+					lblError.setText("Phai la chu so!");
 					return true;
 					
 				}

@@ -84,7 +84,7 @@ public class FacultyPanel extends JPanel implements ActionListener {
 	{
 		this();
 		this.fm=fm;
-		headinglabel.setText("Giảng viên khác");
+		headinglabel.setText("Giang vien khac");
 		this.addnewfaculity.setVisible(false);
 		this.viewbutton.setLocation(addnewfaculity.getX(), addnewfaculity.getY());
 		condition=" where courcecode='"+fm.f.getCourceCode()+"' and semoryear="+fm.f.getSemorYear()+" and facultyid!="+fm.f.getFacultyId();
@@ -119,7 +119,7 @@ public class FacultyPanel extends JPanel implements ActionListener {
 	{
 		this();
 		this.sm=sm;
-		headinglabel.setText("Giảng viên");
+		headinglabel.setText("Giang vien");
 		this.addnewfaculity.setVisible(false);
 		this.viewbutton.setLocation(addnewfaculity.getX(), addnewfaculity.getY());
 		condition=" where courcecode='"+sm.s.getCourceCode()+"' and semoryear="+sm.s.getSemorYear()+" ";
@@ -158,7 +158,7 @@ public class FacultyPanel extends JPanel implements ActionListener {
 		panel.setBounds(10, 0, 1096, 183);
 		add(panel);
 		panel.setLayout(null);
-		headinglabel = new JLabel("Tất cả Giảng viên");
+		headinglabel = new JLabel("Tat ca giang vien");
 		headinglabel.setIcon(null);
 		headinglabel.setBounds(10, 65, 272, 44);
 		panel.add(headinglabel);
@@ -168,7 +168,7 @@ public class FacultyPanel extends JPanel implements ActionListener {
 		headinglabel.setFont(new Font("Segoe UI", Font.BOLD, 30));
 		headinglabel.setOpaque(true);
 		 
-		  addnewfaculity = new JButton("Thêm Giảng viên");
+		  addnewfaculity = new JButton("Them giang vien");
 		  addnewfaculity.setBorder(new EmptyBorder(0, 0, 0, 0));
 		  addnewfaculity.setBounds(932, 139, 153, 33);
 		  panel.add(addnewfaculity);
@@ -179,7 +179,7 @@ public class FacultyPanel extends JPanel implements ActionListener {
 		  
 		  addnewfaculity.setBackground(new Color(255, 255, 255));
 		  
-		  viewbutton = new JButton("Xem hình ảnh ");
+		  viewbutton = new JButton("Xem hinh anh ");
 		  viewbutton.setForeground(new Color(0, 128, 128));
 		  viewbutton.setFont(new Font("Segoe UI", Font.BOLD, 15));
 		  viewbutton.setFocusable(false);
@@ -216,7 +216,7 @@ public class FacultyPanel extends JPanel implements ActionListener {
 		  maxphotospinner.setFocusable(false);
 		  panel.add(maxphotospinner);
 		  
-		  maxphotolabel = new JLabel("Max Photos in Row  ");
+		  maxphotolabel = new JLabel("So anh toi da trong hang  ");
 		  maxphotolabel.setHorizontalAlignment(SwingConstants.RIGHT);
 		  maxphotolabel.setForeground(Color.WHITE);
 		  maxphotolabel.setFont(new Font("Segoe UI", Font.BOLD, 17));
@@ -276,12 +276,12 @@ public class FacultyPanel extends JPanel implements ActionListener {
 			afd.setLocationRelativeTo(null);
 			afd.setVisible(true);
 		}
-		if(e.getSource()==viewbutton && viewbutton.getText().equals("Xem hình ảnh"))
+		if(e.getSource()==viewbutton && viewbutton.getText().equals("Xem hinh anh"))
 		{
 			createphotoviewpanel();
 			
 		}
-		else if(e.getSource()==viewbutton && viewbutton.getText().equals("Xem danh sách"))
+		else if(e.getSource()==viewbutton && viewbutton.getText().equals("Xem danh sach"))
 		{
 			if(photoviewscrollpane!=null)
 			{
@@ -289,7 +289,7 @@ public class FacultyPanel extends JPanel implements ActionListener {
 			}
 			createtablemodel();
 			tableviewpanel.setVisible(true);
-			viewbutton.setText("Xem hình ảnh");
+			viewbutton.setText("Xem hinh anh");
 			
 		}
 			
@@ -318,7 +318,7 @@ public class FacultyPanel extends JPanel implements ActionListener {
 		this.photoviewscrollpane.setVisible(true);
 		this.add(photoviewscrollpane);
 		this.photoviewscrollpane.setBorder(new EmptyBorder(0,0,0,0));
-		viewbutton.setText("Xem danh sách");
+		viewbutton.setText("Xem danh sach");
 		
 	}
 	public void createtablemodel()

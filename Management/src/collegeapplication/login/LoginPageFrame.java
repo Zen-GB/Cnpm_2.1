@@ -63,7 +63,7 @@ public class LoginPageFrame extends JFrame implements ActionListener
 					}
 					else
 					{
-						JOptionPane.showMessageDialog(null, "Start the Database Server first","Error",JOptionPane.ERROR_MESSAGE);
+						JOptionPane.showMessageDialog(null, "Dau tien khoi dong may chu CSDL","Loi",JOptionPane.ERROR_MESSAGE);
 					}
 				} catch (Exception e) {
 					e.printStackTrace();

@@ -53,7 +53,7 @@ public class ViewFacultyPanel extends JPanel {
 		lblDisplayingStudentDetails.setBounds(661, 11, 415, 44);
 		panel.add(lblDisplayingStudentDetails);
 		
-		editdetailsbutton = new JButton("Chỉnh sửa chi tiết");
+		editdetailsbutton = new JButton("Chinh sua chi tiet");
 		editdetailsbutton.setBorder(new EmptyBorder(0, 0, 0, 0));
 		editdetailsbutton.setFocusable(false);
 		editdetailsbutton.setForeground(new Color(0, 139, 139));
@@ -64,7 +64,7 @@ public class ViewFacultyPanel extends JPanel {
 		
 		panel.add(editdetailsbutton);
 		
-		backbutton = new JButton("Quay lại");
+		backbutton = new JButton("Quay lai");
 		backbutton.setContentAreaFilled(false);
 		backbutton.setBorder(new EmptyBorder(0, 0, 0, 0));
 		
@@ -77,14 +77,14 @@ public class ViewFacultyPanel extends JPanel {
 		backbutton.setBounds(10, 141, 88, 36);
 		panel.add(backbutton);
 		
-		JLabel lblLastLogin = new JLabel("Đăng nhập lần cuối : ");
+		JLabel lblLastLogin = new JLabel("Dang nhap lan cuoi : ");
 		if(f.getLastLogin()==null||f.getLastLogin().isEmpty())
 		{
-			lblLastLogin.setText("Đăng nhập lần cuối : Chưa đăng nhập");
+			lblLastLogin.setText("Dang nhap lan cuoi : Chua dang nhap");
 		}
 		else 
 		{
-			lblLastLogin.setText("Đăng nhập lần cuối : "+f.getLastLogin());
+			lblLastLogin.setText("Dang nhap lan cuoi : "+f.getLastLogin());
 		}
 		lblLastLogin.setHorizontalAlignment(SwingConstants.RIGHT);
 		lblLastLogin.setForeground(Color.WHITE);
@@ -92,14 +92,14 @@ public class ViewFacultyPanel extends JPanel {
 		lblLastLogin.setBounds(719, 57, 357, 19);
 		panel.add(lblLastLogin);
 		
-		JLabel lblStudentDetails = new JLabel("Thông tin Giảng viên");
+		JLabel lblStudentDetails = new JLabel("Thong tin Giang vien");
 		lblStudentDetails.setHorizontalAlignment(SwingConstants.LEFT);
 		lblStudentDetails.setForeground(Color.WHITE);
 		lblStudentDetails.setFont(new Font("Segoe UI", Font.BOLD, 30));
 		lblStudentDetails.setBounds(10, 65, 415, 44);
 		panel.add(lblStudentDetails);
 		
-		assignsubjectbutton = new JButton("Phân môn");
+		assignsubjectbutton = new JButton("Phan mon");
 		assignsubjectbutton.setBorder(new EmptyBorder(0, 0, 0, 0));
 		assignsubjectbutton.setCursor(new Cursor(Cursor.HAND_CURSOR));
 		assignsubjectbutton.setFocusable(false);
@@ -109,7 +109,7 @@ public class ViewFacultyPanel extends JPanel {
 		assignsubjectbutton.setBounds(743, 141, 153, 35);
 		panel.add(assignsubjectbutton);
 		
-		JLabel facultyidlbl = new JLabel("Mã số Giảng viên   ");
+		JLabel facultyidlbl = new JLabel("Ma so Giang vien   ");
 		facultyidlbl.setBorder(new LineBorder(new Color(192, 192, 192)));
 		facultyidlbl.setBackground(new Color(255, 255, 255));
 		facultyidlbl.setFont(new Font("Segoe UI Historic", Font.PLAIN, 20));
@@ -118,7 +118,7 @@ public class ViewFacultyPanel extends JPanel {
 		facultyidlbl.setBounds(309, 66+150, 274, 48);
 		add(facultyidlbl);
 		
-		JLabel facultynamelbl = new JLabel("Họ và tên Giảng viên   ");
+		JLabel facultynamelbl = new JLabel("Ho ten Giang vien   ");
 		facultynamelbl.setOpaque(true);
 		facultynamelbl.setHorizontalAlignment(SwingConstants.RIGHT);
 		facultynamelbl.setFont(new Font("Segoe UI Historic", Font.PLAIN, 20));
@@ -127,7 +127,7 @@ public class ViewFacultyPanel extends JPanel {
 		facultynamelbl.setBounds(309, 113+150, 274, 48);
 		add(facultynamelbl);
 		
-		JLabel lblAddress = new JLabel("Địa chỉ   ");
+		JLabel lblAddress = new JLabel("Dia chi   ");
 		lblAddress.setOpaque(true);
 		lblAddress.setHorizontalAlignment(SwingConstants.RIGHT);
 		lblAddress.setFont(new Font("Segoe UI Historic", Font.PLAIN, 20));
@@ -136,7 +136,7 @@ public class ViewFacultyPanel extends JPanel {
 		lblAddress.setBounds(309, 160+150, 274, 48);
 		add(lblAddress);
 		
-		JLabel lblEmailId = new JLabel("Địa chỉ Email  ");
+		JLabel lblEmailId = new JLabel("Email  ");
 		lblEmailId.setOpaque(true);
 		lblEmailId.setHorizontalAlignment(SwingConstants.RIGHT);
 		lblEmailId.setFont(new Font("Segoe UI Historic", Font.PLAIN, 20));
@@ -145,7 +145,7 @@ public class ViewFacultyPanel extends JPanel {
 		lblEmailId.setBounds(309, 207+150, 274, 48);
 		add(lblEmailId);
 		
-		JLabel lblDateOfBirth = new JLabel("Ngày sinh ");
+		JLabel lblDateOfBirth = new JLabel("Ngay sinh ");
 		lblDateOfBirth.setOpaque(true);
 		lblDateOfBirth.setHorizontalAlignment(SwingConstants.RIGHT);
 		lblDateOfBirth.setFont(new Font("Segoe UI Historic", Font.PLAIN, 20));
@@ -154,7 +154,7 @@ public class ViewFacultyPanel extends JPanel {
 		lblDateOfBirth.setBounds(309, 254+150, 274, 48);
 		add(lblDateOfBirth);
 		
-		JLabel lblContactNumber = new JLabel("Số điện thoại ");
+		JLabel lblContactNumber = new JLabel("So dien thoai ");
 		lblContactNumber.setOpaque(true);
 		lblContactNumber.setHorizontalAlignment(SwingConstants.RIGHT);
 		lblContactNumber.setFont(new Font("Segoe UI Historic", Font.PLAIN, 20));
@@ -172,7 +172,7 @@ public class ViewFacultyPanel extends JPanel {
 		qualificationlbl.setBounds(20, 359+150, 291, 48);
 		add(qualificationlbl);
 		
-		JLabel courcelbl = new JLabel("Khóa học   ");
+		JLabel courcelbl = new JLabel("Khoa hoc   ");
 		courcelbl.setOpaque(true);
 		courcelbl.setHorizontalAlignment(SwingConstants.RIGHT);
 		courcelbl.setFont(new Font("Segoe UI Historic", Font.PLAIN, 20));
@@ -181,7 +181,7 @@ public class ViewFacultyPanel extends JPanel {
 		courcelbl.setBounds(20, 405+150, 291, 48);
 		add(courcelbl);
 		
-		JLabel semoryearlbl = new JLabel("Học kì/Năm học    ");
+		JLabel semoryearlbl = new JLabel("Hoc ky/Nam hoc    ");
 		semoryearlbl.setOpaque(true);
 		semoryearlbl.setHorizontalAlignment(SwingConstants.RIGHT);
 		semoryearlbl.setFont(new Font("Segoe UI Historic", Font.PLAIN, 20));
@@ -190,7 +190,7 @@ public class ViewFacultyPanel extends JPanel {
 		semoryearlbl.setBounds(582, 405+150, 239, 48);
 		add(semoryearlbl);
 		
-		JLabel lblsubject = new JLabel("Môn    ");
+		JLabel lblsubject = new JLabel("Mon    ");
 		lblsubject.setOpaque(true);
 		lblsubject.setHorizontalAlignment(SwingConstants.RIGHT);
 		lblsubject.setFont(new Font("Segoe UI Historic", Font.PLAIN, 20));
@@ -199,7 +199,7 @@ public class ViewFacultyPanel extends JPanel {
 		lblsubject.setBounds(20, 452+150, 291, 48);
 		add(lblsubject);
 		
-		JLabel positionlbl = new JLabel("Vị trí    ");
+		JLabel positionlbl = new JLabel("Vịi tri    ");
 		positionlbl.setOpaque(true);
 		positionlbl.setHorizontalAlignment(SwingConstants.RIGHT);
 		positionlbl.setFont(new Font("Segoe UI Historic", Font.PLAIN, 20));
@@ -333,7 +333,7 @@ public class ViewFacultyPanel extends JPanel {
 				profilepiclabel.setBackground(new Color(240, 248, 255));
 				profilepiclabel.setFont(new Font("Tahoma", Font.PLAIN, 16));
 				profilepiclabel.setHorizontalAlignment(SwingConstants.CENTER);
-				JLabel lblsemoryear = new JLabel("Kinh nghiệm   ");
+				JLabel lblsemoryear = new JLabel("Kinh nghiem   ");
 				lblsemoryear.setOpaque(true);
 				lblsemoryear.setHorizontalAlignment(SwingConstants.RIGHT);
 				lblsemoryear.setFont(new Font("Segoe UI Historic", Font.PLAIN, 20));
@@ -358,7 +358,7 @@ public class ViewFacultyPanel extends JPanel {
 		// TODO Auto-generated constructor stub
 		this(f);
 		this.lastpanel=lastpanel;
-		JLabel lblJoinedDate = new JLabel("Ngày tham gia    ");
+		JLabel lblJoinedDate = new JLabel("Ngay tham gia    ");
 		lblJoinedDate.setOpaque(true);
 		lblJoinedDate.setHorizontalAlignment(SwingConstants.RIGHT);
 		lblJoinedDate.setFont(new Font("Segoe UI Historic", Font.PLAIN, 20));
@@ -376,7 +376,7 @@ public class ViewFacultyPanel extends JPanel {
 		joineddatelabel.setBounds(309, 649, 274, 48);
 		add(joineddatelabel);
 		
-		JLabel lblPassword = new JLabel("Mật khẩu    ");
+		JLabel lblPassword = new JLabel("Mat khau    ");
 		lblPassword.setOpaque(true);
 		lblPassword.setHorizontalAlignment(SwingConstants.RIGHT);
 		lblPassword.setFont(new Font("Segoe UI Historic", Font.PLAIN, 20));
@@ -399,7 +399,7 @@ public class ViewFacultyPanel extends JPanel {
 				am.viewfacultypanel.setVisible(false);
 				if(lastpanel.getName().equals("Faculty Panel"))
 				{
-					if(am.facultypanel.viewbutton.getText().equals("Xem hình ảnh"))
+					if(am.facultypanel.viewbutton.getText().equals("Xem hinh anh"))
 					{
 						am.facultypanel.createtablemodel();
 					}
@@ -466,7 +466,7 @@ public class ViewFacultyPanel extends JPanel {
 				fm.viewfacultypanel.setVisible(false);
 				if(lastpanel.getName().equals("Faculty Panel"))
 				{
-					if(fm.facultypanel.viewbutton.getText().equals("Xem hình ảnh"))
+					if(fm.facultypanel.viewbutton.getText().equals("Xem hinh anh"))
 					{
 						fm.facultypanel.createtablemodel();
 					}
@@ -495,7 +495,7 @@ public class ViewFacultyPanel extends JPanel {
 		// TODO Auto-generated constructor stub
 		this(f);
 		assignsubjectbutton.setVisible(false);
-		editdetailsbutton.setText("Đổi mật khẩu");
+		editdetailsbutton.setText("Doi mat khau");
 		backbutton.setVisible(false);
 		editdetailsbutton.addActionListener(new ActionListener()
 		{

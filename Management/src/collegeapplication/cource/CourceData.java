@@ -12,14 +12,6 @@ import collegeapplication.common.Notification;
 import collegeapplication.common.NotificationData;
 import collegeapplication.common.TimeUtil;
 
-
-/*
- * Title : UserData.java
- * Created by : Ajaysinh Rathod
- * Purpose : Handling all the data related to cource
- * Mail : ajaysinhrathod1290@gmail.com
- */
-
 public class CourceData
 {
 	
@@ -100,7 +92,7 @@ public class CourceData
 				String courcename[];
 				int i=0;
 				courcename=new String[getTotalCource()+1];
-				courcename[i++]="---Select Cource---";
+				courcename[i++]="---Lua chon khoa hoc---";
 		
 				try
 				{
@@ -456,10 +448,10 @@ public class CourceData
 					n.setSemorYear(c.getSemorYear());
 					n.setTitle("Result");
 					n.setUserId("Admin");
-					n.setMessage("Your result is declared. now you can see your marksheet.");
+					n.setMessage("Yeu cau cua ban da duoc khai bao. Bay gio ban co the xem ket qua cua minh.");
 					n.setTime(TimeUtil.getCurrentTime());
 					new NotificationData().addNotification(n);
-					n.setMessage( c.getCourceCode()+" "+getsemoryear(c.getCourceCode())+"-"+c.getSemorYear()+" result is declared. now you can see student's marksheet.");
+					n.setMessage( c.getCourceCode()+" "+getsemoryear(c.getCourceCode())+"-"+c.getSemorYear()+" ket qua da duoc khai bao. bay gio ban co the xem ket qua cua sinh vien.");
 					n.setUserProfile("Faculty");
 					new NotificationData().addNotification(n);
 				}

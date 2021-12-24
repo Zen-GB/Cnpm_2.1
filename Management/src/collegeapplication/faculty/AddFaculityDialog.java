@@ -35,13 +35,6 @@ import javax.swing.border.MatteBorder;
 
 import collegeapplication.admin.AdminMain;
 
-/*
- * Title : AddFacultyDialog.java
- * Created by : Ajaysinh Rathod
- * Purpose : For adding new faculty 
- * Mail : ajaysinhrathod1290@gmail.com
- */
-
 @SuppressWarnings("serial")
 public class AddFaculityDialog extends JDialog implements ActionListener
 {

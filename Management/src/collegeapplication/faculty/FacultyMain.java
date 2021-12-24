@@ -645,7 +645,7 @@ public class FacultyMain extends JFrame  implements ActionListener
 			}
 		else if(source==exitbutton)
 		{
-			int result=JOptionPane.showConfirmDialog(null,"Bạn thực sự muốn thoát khỏi chương trình ?","Thoat",JOptionPane.INFORMATION_MESSAGE);
+			int result=JOptionPane.showConfirmDialog(null,"Ban thuc su muon thoat khoi chuong trinh ?","Thoat",JOptionPane.INFORMATION_MESSAGE);
 			if(result==JOptionPane.YES_OPTION)
 			{
 				f.setActiveStatus(false);
@@ -657,7 +657,7 @@ public class FacultyMain extends JFrame  implements ActionListener
 		}
 		else if(source==logoutbutton)
 		{
-			int result=JOptionPane.showConfirmDialog(null,"Bạn thật sự muốn đăng xuất khỏi tài khoản này ?","Dang xuat",JOptionPane.INFORMATION_MESSAGE);
+			int result=JOptionPane.showConfirmDialog(null,"Ban that su muon dang xuat khoi tai khoang nay ?","Dang xuat",JOptionPane.INFORMATION_MESSAGE);
 			if(result==JOptionPane.YES_OPTION)
 			{
 				f.setActiveStatus(false);
