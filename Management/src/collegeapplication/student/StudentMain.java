@@ -119,7 +119,7 @@ public class StudentMain extends JFrame  implements ActionListener
 					else
 					{
 						UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-						JOptionPane.showMessageDialog(null, "You Are Not Connected To DataBase","Error",JOptionPane.ERROR_MESSAGE);
+						JOptionPane.showMessageDialog(null, "Ban chua ket noi den DataBase","Loi",JOptionPane.ERROR_MESSAGE);
 					}
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -144,7 +144,7 @@ public class StudentMain extends JFrame  implements ActionListener
 					if(result==0)
 					{
 						timer.stop();
-						JOptionPane.showMessageDialog(null,"Your account is deleted by Admin","Account deleted",JOptionPane.ERROR_MESSAGE);
+						JOptionPane.showMessageDialog(null,"Tai khoan cua ban da bi Admin xoa","Account da bi xoa",JOptionPane.ERROR_MESSAGE);
 						System.exit(0);
 					}
 					else
@@ -193,7 +193,7 @@ public class StudentMain extends JFrame  implements ActionListener
 	    UIManager.put("ScrollBarUI", "com.sun.java.swing.plaf.windows.WindowsScrollBarUI");
 	  
 		this.setResizable(false);
-		setTitle("College Data Management");
+		setTitle("Quan ly du lieu");
 		setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
 		contentPane = new JPanel();
 		contentPane.setForeground(Color.DARK_GRAY);
@@ -244,22 +244,22 @@ public class StudentMain extends JFrame  implements ActionListener
 		sidebarpanel.add(homebutton);
 		btn=homebutton;
 		
-		studentsbutton = createButton("Classmates","Students");
+		studentsbutton = createButton("Nhom lop","Sinh vien");
 		sidebarpanel.add(studentsbutton);
 		
-		subjectbutton =createButton("Subjects");
+		subjectbutton =createButton("Mon hoc");
 		sidebarpanel.add(subjectbutton);
 		
-		faculitiesbutton = createButton("Faculities");
+		faculitiesbutton = createButton("Giang vien");
 		sidebarpanel.add(faculitiesbutton);
 
-		assignedsubjectbutton = createButton("Assigned Subject","Assign Subject");
+		assignedsubjectbutton = createButton("Phan mon","Phan mon");
 		sidebarpanel.add(assignedsubjectbutton);
 		
-		marksheetbutton = createButton("Mark Sheet","Marksheet Report");
+		marksheetbutton = createButton("Diem mon hoc","Bao cao diem");
 		sidebarpanel.add(marksheetbutton);
 		
-		attandancereportbutton = createButton("Attandance Report");
+		attandancereportbutton = createButton("Bao cao diem danh");
 		sidebarpanel.add(attandancereportbutton);
 		
 		/*chatbutton = createButton("Chat");
@@ -281,7 +281,7 @@ public class StudentMain extends JFrame  implements ActionListener
 			totalnewchatmessage.setIcon(new ImageIcon(messagecount.getScaledInstance(26+totalnewchatmessage.getText().length(), 26, Image.SCALE_SMOOTH)));
 		}*/
 		
-		searchbutton = createButton("Search");
+		searchbutton = createButton("Tim kiem");
 		sidebarpanel.add(searchbutton);
 		
 		/*notificationbutton = createButton("Notification");
@@ -305,16 +305,16 @@ public class StudentMain extends JFrame  implements ActionListener
 		}*/
 		
 		
-		myprofilebutton = createButton("My Profile","Profile");
+		myprofilebutton = createButton("Thong tin cua toi","Thong tin");
 		sidebarpanel.add(myprofilebutton);
 		
-		contactusbutton= createButton("Contact Us");
+		contactusbutton= createButton("Lien he");
 		sidebarpanel.add(contactusbutton);
 		
-		logoutbutton = createButton("logout");
+		logoutbutton = createButton("Dang xuat");
 		sidebarpanel.add(logoutbutton);
 
-		exitbutton =createButton("Exit");
+		exitbutton =createButton("Thoat");
 		sidebarpanel.add(exitbutton);
 		
 		activeButton(homebutton);
@@ -612,7 +612,7 @@ public class StudentMain extends JFrame  implements ActionListener
 		}
 		else if(source==exitbutton)
 		{
-			int result=JOptionPane.showConfirmDialog(null,"Do you want to exit this application ?","Exit",JOptionPane.INFORMATION_MESSAGE);
+			int result=JOptionPane.showConfirmDialog(null,"Ban thuc su muon thoat chuong trinh ?","Thoat",JOptionPane.INFORMATION_MESSAGE);
 			if(result==JOptionPane.YES_OPTION)
 			{
 				try {
@@ -631,7 +631,7 @@ public class StudentMain extends JFrame  implements ActionListener
 		}
 		else if(source==logoutbutton)
 		{
-			int result=JOptionPane.showConfirmDialog(null,"Do you want to logout this application ?","Logout",JOptionPane.INFORMATION_MESSAGE);
+			int result=JOptionPane.showConfirmDialog(null,"Ban thuc su muon dang xuat tai khoan ?","Dang xuat",JOptionPane.INFORMATION_MESSAGE);
 			if(result==JOptionPane.YES_OPTION)
 			{
         		s.setActiveStatus(false);

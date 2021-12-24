@@ -81,7 +81,7 @@ public class AttandanceReportPanel extends JPanel implements ActionListener {
 		panel.setBounds(10, 0, 1077, 183);
 		add(panel);
 		panel.setLayout(null);
-		JLabel headinglabel = new JLabel("Attandance Report");
+		JLabel headinglabel = new JLabel("Bao cao diem danh");
 		headinglabel.setIcon(null);
 		headinglabel.setBounds(10, 65, 272, 44);
 		panel.add(headinglabel);
@@ -91,7 +91,7 @@ public class AttandanceReportPanel extends JPanel implements ActionListener {
 		headinglabel.setFont(new Font("Segoe UI", Font.BOLD, 28));
 		headinglabel.setOpaque(true);
 		
-		subjectwicebutton = new JButton("Subject Wice");
+		subjectwicebutton = new JButton("Theo mon");
 		subjectwicebutton.setForeground(new Color(0, 139, 139));
 		subjectwicebutton.setFont(new Font("Segoe UI", Font.BOLD, 15));
 		subjectwicebutton.setCursor(new Cursor(Cursor.HAND_CURSOR));
@@ -100,7 +100,7 @@ public class AttandanceReportPanel extends JPanel implements ActionListener {
 
 		panel.add(subjectwicebutton);
 		
-		studentwicebutton = new JButton("Student Wice");
+		studentwicebutton = new JButton("Theo Sinh vien");
 		studentwicebutton.setForeground(new Color(0, 139, 139));
 		studentwicebutton.setCursor(new Cursor(Cursor.HAND_CURSOR));
 		studentwicebutton.setFont(new Font("Segoe UI", Font.BOLD, 15));
@@ -109,7 +109,7 @@ public class AttandanceReportPanel extends JPanel implements ActionListener {
 
 		panel.add(studentwicebutton);
 		
-		classwicebutton = new JButton("Class Wice");
+		classwicebutton = new JButton("Theo Lop");
 		classwicebutton.setForeground(new Color(0, 139, 139));
 		classwicebutton.setFont(new Font("Segoe UI", Font.BOLD, 15));
 		classwicebutton.setBackground(Color.WHITE);
@@ -118,21 +118,21 @@ public class AttandanceReportPanel extends JPanel implements ActionListener {
 
 		panel.add(classwicebutton);
 		  
-		label1 = new JLabel("Cource Name   :");
+		label1 = new JLabel("Ten khoa   :");
 		label1.setHorizontalAlignment(SwingConstants.RIGHT);
 		label1.setForeground(Color.DARK_GRAY);
 		label1.setFont(new Font("Segoe UI", Font.PLAIN, 18));
 		label1.setBounds(29, 213, 163, 37);
 		add(label1);
 		
-		label2 = new JLabel("Semester or Years   :");
+		label2 = new JLabel("Hoc ki hoac nam hoc   :");
 		label2.setHorizontalAlignment(SwingConstants.RIGHT);
 		label2.setForeground(Color.DARK_GRAY);
 		label2.setFont(new Font("Segoe UI", Font.PLAIN, 18));
 		label2.setBounds(23, 270, 169, 40);
 		add(label2);
 		
-		label3 = new JLabel("Select Subject  :");
+		label3 = new JLabel("Chon mon hoc  :");
 		label3.setHorizontalAlignment(SwingConstants.RIGHT);
 		label3.setForeground(Color.DARK_GRAY);
 		label3.setFont(new Font("Segoe UI", Font.PLAIN, 18));
@@ -188,7 +188,7 @@ public class AttandanceReportPanel extends JPanel implements ActionListener {
 		table.getTableHeader().setReorderingAllowed(false);		
 	
 		scrollPane.setViewportView(table);
-		 Errorlabel = new JLabel("This is required question  !");
+		 Errorlabel = new JLabel("Day la cau hoi bat buoc  !");
 		    Errorlabel.setVisible(false);
 		    Errorlabel.setForeground(Color.RED);
 		    Errorlabel.setFont(new Font("Arial", Font.PLAIN, 14));
@@ -198,7 +198,7 @@ public class AttandanceReportPanel extends JPanel implements ActionListener {
 			disableButton(studentwicebutton);
 			disableButton(classwicebutton);
 			
-			fetchdetailsbutton = new JButton("Fetch Details");
+			fetchdetailsbutton = new JButton("Xem chi tiet");
 			fetchdetailsbutton.setName("Active");
 			fetchdetailsbutton.setForeground(Color.WHITE);
 			fetchdetailsbutton.setFont(new Font("Segoe UI", Font.BOLD, 15));
@@ -222,7 +222,7 @@ public class AttandanceReportPanel extends JPanel implements ActionListener {
 			{
 				e.printStackTrace();
 			}
-			nodatafoundlabel.setText("No Data Found...!");
+			nodatafoundlabel.setText("Khong tim thay du lieu...!");
 			nodatafoundlabel.setVerticalTextPosition(JLabel.BOTTOM);
 			nodatafoundlabel.setBorder(null);
 			nodatafoundlabel.setBackground(new Color(245, 245, 245));
@@ -286,7 +286,7 @@ public class AttandanceReportPanel extends JPanel implements ActionListener {
 				else
 				{
 				
-						subjectorrollcombo.setModel(new DefaultComboBoxModel<String>(new String[] {"No Subject Found"}));
+						subjectorrollcombo.setModel(new DefaultComboBoxModel<String>(new String[] {"Khong tim thay mon hoc"}));
 				}
 			 }
 			 else if(studentwicebutton.getName().equals("Active"))
@@ -311,11 +311,11 @@ public class AttandanceReportPanel extends JPanel implements ActionListener {
 			{
 				showerror(semoryearcombo);
 			}
-			else if(subjectorrollcombo.isVisible() && subjectorrollcombo.getSelectedItem().equals("No Subject Found"))
+			else if(subjectorrollcombo.isVisible() && subjectorrollcombo.getSelectedItem().equals("Khong tim thay mon hoc"))
 			{
 				Component tf=subjectorrollcombo;
 				Errorlabel.setVisible(true);
-				Errorlabel.setText("No Subject Found !");
+				Errorlabel.setText("Khong tim thay mon hoc !");
 				Errorlabel.setBounds(tf.getX(), tf.getY()+tf.getHeight()-5, 400,26);
 			}
 			else if(subjectorrollcombo.isVisible() && subjectorrollcombo.getSelectedIndex()==0)
@@ -334,7 +334,7 @@ public class AttandanceReportPanel extends JPanel implements ActionListener {
 	public void showerror(JComponent tf)
 	{
 		Errorlabel.setVisible(true);
-		Errorlabel.setText("This is required question !");
+		Errorlabel.setText("Day la cau hoi bat buoc !");
 		Errorlabel.setBounds(tf.getX(), tf.getY()+tf.getHeight()-5, 400,26);
 	}
 
@@ -403,7 +403,7 @@ public class AttandanceReportPanel extends JPanel implements ActionListener {
 				disableButton(classwicebutton);
 				label3.setVisible(true);
 				subjectorrollcombo.setVisible(true);
-				label3.setText("Select Roll Number :");
+				label3.setText("Chon ma so sinh vien :");
 				fetchdetailsbutton.setLocation(fetchdetailsbutton.getX(),subjectorrollcombo.getY()+65);
 				scrollPane.setLocation(scrollPane.getX(), fetchdetailsbutton.getY()+60);
 				subjectorrollcombo.setModel(new DefaultComboBoxModel<String>(new String[] {""}));	
@@ -497,7 +497,7 @@ public class AttandanceReportPanel extends JPanel implements ActionListener {
 				disableButton(classwicebutton);
 				label3.setVisible(true);
 				subjectorrollcombo.setVisible(true);
-				label3.setText("Select Roll Number :");
+				label3.setText("Chon ma so sinh vien :");
 				fetchdetailsbutton.setVisible(true);
 				subjectorrollcombo.setLocation(courcenamecombo.getLocation());
 				fetchdetailsbutton.setLocation(fetchdetailsbutton.getX(),semoryearcombo.getY());
@@ -521,7 +521,7 @@ public class AttandanceReportPanel extends JPanel implements ActionListener {
 				disableButton(classwicebutton);
 				label3.setVisible(true);
 				subjectorrollcombo.setVisible(true);
-				label3.setText("Select Subject :");
+				label3.setText("Chon mon hoc :");
 				fetchdetailsbutton.setVisible(true);
 				subjectorrollcombo.setLocation(courcenamecombo.getLocation());
 				fetchdetailsbutton.setLocation(fetchdetailsbutton.getX(),semoryearcombo.getY());
@@ -559,7 +559,7 @@ public class AttandanceReportPanel extends JPanel implements ActionListener {
 	public AttandanceReportPanel(StudentMain sm,JComponent lastpanel)
 	{
 		this(sm);
-		backbutton = new JButton("Back");
+		backbutton = new JButton("Quay lai");
 		backbutton.setContentAreaFilled(false);
 		backbutton.setBorder(new EmptyBorder(0, 0, 0, 0));
 		backbutton.setIcon(new ImageIcon(".\\assets\\back.png"));

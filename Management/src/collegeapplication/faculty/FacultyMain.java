@@ -248,7 +248,7 @@ public class FacultyMain extends JFrame  implements ActionListener
 		subjectbutton = createButton("Mon hoc");
 		sidebarpanel.add(subjectbutton);
 		
-		faculitiesbutton =createButton("Giang vien khac","Giang vien");
+		faculitiesbutton =createButton("Giang vien","Giang vien");
 		sidebarpanel.add(faculitiesbutton);
 		
 		assignedsubjectbutton =createButton("Phan mon","Phan mon");

@@ -55,7 +55,7 @@ public class ViewStudentDialog extends JDialog implements ActionListener
 		getContentPane().setBackground(Color.WHITE);
 		setSize(520, 484);
 		getContentPane().setLayout(null);
-		JLabel headerlabel = new JLabel("View Student Details");
+		JLabel headerlabel = new JLabel("Xem thong tin sinh vien");
 		headerlabel.setFont(new Font("Segoe UI", Font.PLAIN, 15));
 		headerlabel.setHorizontalAlignment(SwingConstants.CENTER);
 		headerlabel.setBounds(0, 0, 514, 53);
@@ -98,7 +98,7 @@ public class ViewStudentDialog extends JDialog implements ActionListener
 		getContentPane().add(panel);
 		panel.setLayout(null);
 		
-		 viewdetails = new JButton("View Details");
+		 viewdetails = new JButton("Xem chi tiet");
 		 viewdetails.setCursor(new Cursor(Cursor.HAND_CURSOR));
 		viewdetails.setFocusable(false);
 		viewdetails.setFont(new Font("Segoe UI", Font.BOLD, 14));
@@ -108,25 +108,25 @@ public class ViewStudentDialog extends JDialog implements ActionListener
 		viewdetails.setBounds(351, 11, 139, 33);
 		panel.add(viewdetails);
 		
-		JLabel lblCource = new JLabel("Cource     :");
+		JLabel lblCource = new JLabel("Mon hoc     :");
 		lblCource.setHorizontalAlignment(SwingConstants.RIGHT);
 		lblCource.setFont(new Font("Microsoft YaHei Light", Font.BOLD, 18));
 		lblCource.setBounds(24, 98, 136, 43);
 		getContentPane().add(lblCource);
 		
-		JLabel lblSemyear = new JLabel("Sem/Year     :");
+		JLabel lblSemyear = new JLabel("Hoc ki/Nam hoc     :");
 		lblSemyear.setHorizontalAlignment(SwingConstants.RIGHT);
 		lblSemyear.setFont(new Font("Microsoft YaHei Light", Font.BOLD, 18));
 		lblSemyear.setBounds(24, 191, 136, 43);
 		getContentPane().add(lblSemyear);
 		
-		JLabel lblRollNumber = new JLabel("Roll no      :");
+		JLabel lblRollNumber = new JLabel("Ma so sinh vien      :");
 		lblRollNumber.setHorizontalAlignment(SwingConstants.RIGHT);
 		lblRollNumber.setFont(new Font("Microsoft YaHei Light", Font.BOLD, 18));
 		lblRollNumber.setBounds(10, 286, 150, 43);
 		getContentPane().add(lblRollNumber);
 		
-		Errorlabel = new JLabel("This is required question !");
+		Errorlabel = new JLabel("Day la cau hoi bat buoc !");
 		Errorlabel.setForeground(new Color(255, 0, 0));
 		Errorlabel.setFont(new Font("Calibri", Font.PLAIN, 16));
 		Errorlabel.setBounds(21, 127, 250, 17);

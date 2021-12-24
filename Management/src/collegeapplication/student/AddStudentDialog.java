@@ -104,7 +104,7 @@ public class AddStudentDialog extends JDialog implements ActionListener {
 		contentPanel.setLayout(null);
 		contentPanel.setBorder(new EmptyBorder(5, 5, 5, 5));
 
-		headerlabel = new JLabel("Add New Student");
+		headerlabel = new JLabel("Them Sinh vien");
 		headerlabel.setFont(new Font("Segoe UI", Font.PLAIN, 15));
 		headerlabel.setHorizontalAlignment(SwingConstants.CENTER);
 		headerlabel.setBounds(0, 0, 834, 40);
@@ -118,7 +118,7 @@ public class AddStudentDialog extends JDialog implements ActionListener {
 
 		courcenamecombo = new JComboBox<String>(new CourceData().getCourceName());
 		courcenamecombo.setForeground(Color.DARK_GRAY);
-		courcenamecombo.setToolTipText("Cource");
+		courcenamecombo.setToolTipText("Khoa hoc");
 		courcenamecombo.setFont(new Font("Segoe UI Historic", Font.PLAIN, 18));
 		courcenamecombo.addActionListener(this);
 		courcenamecombo.setBackground(new Color(255, 255, 255));
@@ -127,8 +127,8 @@ public class AddStudentDialog extends JDialog implements ActionListener {
 		getContentPane().add(courcenamecombo);
 
 		semoryearcombo = new JComboBox<String>();
-		semoryearcombo.setPrototypeDisplayValue("--select prototype--");
-		semoryearcombo.setToolTipText("Semester/Year");
+		semoryearcombo.setPrototypeDisplayValue("--Chon--");
+		semoryearcombo.setToolTipText("Hoc ki/Nam hoc");
 		semoryearcombo.setFont(new Font("Segoe UI Historic", Font.PLAIN, 18));
 		semoryearcombo.setBackground(Color.WHITE);
 		semoryearcombo.setFocusable(false);
@@ -138,14 +138,14 @@ public class AddStudentDialog extends JDialog implements ActionListener {
 		getContentPane().add(semoryearcombo);
 
 		rollnumberfield = new HintTextField("");
-		rollnumberfield.setToolTipText("Roll Number");
+		rollnumberfield.setToolTipText("Ma so Sinh vien");
 		rollnumberfield.setFocusable(false);
 		rollnumberfield.setFont(new Font("Segoe UI Historic", Font.PLAIN, 16));
 		rollnumberfield.setBounds(134, 116, 276, 40);
 		getContentPane().add(rollnumberfield);
 		rollnumberfield.setColumns(10);
 
-		JLabel lblRollNo = new JLabel("Roll Number");
+		JLabel lblRollNo = new JLabel("Ma so Sinh vien");
 		lblRollNo.setForeground(Color.DARK_GRAY);
 		lblRollNo.setFont(new Font("Segoe UI Historic", Font.PLAIN, 19));
 		lblRollNo.setFocusable(true);
@@ -153,7 +153,7 @@ public class AddStudentDialog extends JDialog implements ActionListener {
 		getContentPane().add(lblRollNo);
 
 		optionalsubjectcombo = new JComboBox<String>();
-		optionalsubjectcombo.setToolTipText("Optional Subject");
+		optionalsubjectcombo.setToolTipText("Mon tu chon");
 		optionalsubjectcombo.setFocusable(false);
 		optionalsubjectcombo.addKeyListener(new KeyAdapter() {
 			@Override
@@ -170,8 +170,8 @@ public class AddStudentDialog extends JDialog implements ActionListener {
 		optionalsubjectcombo.addActionListener(this);
 		getContentPane().add(optionalsubjectcombo);
 
-		firstnamefield = new HintTextField("First Name");
-		firstnamefield.setToolTipText("First Name");
+		firstnamefield = new HintTextField("Ten");
+		firstnamefield.setToolTipText("Ten");
 		firstnamefield.setForeground(Color.DARK_GRAY);
 		firstnamefield.setFont(new Font("Segoe UI Emoji", Font.PLAIN, 18));
 		firstnamefield.addActionListener(this);
@@ -179,38 +179,38 @@ public class AddStudentDialog extends JDialog implements ActionListener {
 		firstnamefield.setBounds(10, 177, 400, 40);
 		getContentPane().add(firstnamefield);
 
-		lastnamefield = new HintTextField("Last Name");
-		lastnamefield.setToolTipText("Last Name");
+		lastnamefield = new HintTextField("Ho");
+		lastnamefield.setToolTipText("Ho");
 		lastnamefield.setForeground(Color.DARK_GRAY);
 		lastnamefield.setFont(new Font("Segoe UI Emoji", Font.PLAIN, 18));
 		lastnamefield.setColumns(10);
 		lastnamefield.setBounds(424, 177, 400, 40);
 		getContentPane().add(lastnamefield);
 
-		emailidfield = new HintTextField(" Email ID");
-		emailidfield.setToolTipText("Email ID");
+		emailidfield = new HintTextField(" Dia chi Email ");
+		emailidfield.setToolTipText("Dia chi Email ");
 		emailidfield.setForeground(Color.DARK_GRAY);
 		emailidfield.setFont(new Font("Segoe UI Emoji", Font.PLAIN, 18));
 		emailidfield.setColumns(10);
 		emailidfield.setBounds(10, 240, 400, 40);
 		getContentPane().add(emailidfield);
 
-		contactnumberfield = new HintTextField(" Contact Number");
-		contactnumberfield.setToolTipText("Contact Number");
+		contactnumberfield = new HintTextField(" So dien thoai");
+		contactnumberfield.setToolTipText("So dien thoai");
 		contactnumberfield.setForeground(Color.DARK_GRAY);
 		contactnumberfield.setFont(new Font("Segoe UI Emoji", Font.PLAIN, 18));
 		contactnumberfield.setColumns(10);
 		contactnumberfield.setBounds(424, 240, 400, 40);
 		getContentPane().add(contactnumberfield);
 
-		JLabel lblDateOfBirth = new JLabel("Date of Birth");
+		JLabel lblDateOfBirth = new JLabel("Ngay sinh");
 		lblDateOfBirth.setForeground(Color.DARK_GRAY);
 		lblDateOfBirth.setFont(new Font("Segoe UI Historic", Font.PLAIN, 19));
 		lblDateOfBirth.setBounds(10, 302, 114, 40);
 		getContentPane().add(lblDateOfBirth);
 
 		birthdatespinner = new JSpinner();
-		birthdatespinner.setToolTipText("Date Of Birth");
+		birthdatespinner.setToolTipText("Ngay sinh");
 		birthdatespinner.addKeyListener(new KeyAdapter() {
 			@Override
 			public void keyPressed(KeyEvent e) {
@@ -227,8 +227,8 @@ public class AddStudentDialog extends JDialog implements ActionListener {
 		getContentPane().add(birthdatespinner);
 
 		gendercombo = new JComboBox<String>();
-		gendercombo.setToolTipText("Gender");
-		gendercombo.setModel(new DefaultComboBoxModel<String>(new String[] { "---Select Gender---", "Male", "Female" }));
+		gendercombo.setToolTipText("Gioi tinh");
+		gendercombo.setModel(new DefaultComboBoxModel<String>(new String[] { "---Chon---", "Nam", "Nu" }));
 		gendercombo.setFont(new Font("Segoe UI Historic", Font.PLAIN, 16));
 		gendercombo.setBackground(Color.WHITE);
 		gendercombo.addActionListener(this);
@@ -236,74 +236,74 @@ public class AddStudentDialog extends JDialog implements ActionListener {
 		gendercombo.setFocusable(false);
 		getContentPane().add(gendercombo);
 
-		statefield = new HintTextField("State");
-		statefield.setToolTipText("State");
+		statefield = new HintTextField("Quan/ Huyen");
+		statefield.setToolTipText("Quan/ Huyen");
 		statefield.setForeground(Color.DARK_GRAY);
 		statefield.setFont(new Font("Segoe UI Emoji", Font.PLAIN, 18));
 		statefield.setColumns(10);
 		statefield.setBounds(10, 363, 400, 40);
 		getContentPane().add(statefield);
 
-		cityfield = new HintTextField(" City");
-		cityfield.setToolTipText("City");
+		cityfield = new HintTextField(" Thanh pho/ Tinh");
+		cityfield.setToolTipText("Thanh pho/ Tinh");
 		cityfield.setForeground(Color.DARK_GRAY);
 		cityfield.setFont(new Font("Segoe UI Emoji", Font.PLAIN, 18));
 		cityfield.setColumns(10);
 		cityfield.setBounds(424, 363, 400, 40);
 		getContentPane().add(cityfield);
 
-		fathernamefield = new HintTextField(" Father Name");
-		fathernamefield.setToolTipText("Father Name");
+		fathernamefield = new HintTextField(" Ten cha");
+		fathernamefield.setToolTipText("Ten cha");
 		fathernamefield.setForeground(Color.DARK_GRAY);
 		fathernamefield.setFont(new Font("Segoe UI Emoji", Font.PLAIN, 18));
 		fathernamefield.setColumns(10);
 		fathernamefield.setBounds(10, 424, 400, 40);
 		getContentPane().add(fathernamefield);
 
-		fatheroccupationfield = new HintTextField(" Father Occupation");
-		fatheroccupationfield.setToolTipText("Father Occupation");
+		fatheroccupationfield = new HintTextField(" Nghe nghiep cua cha");
+		fatheroccupationfield.setToolTipText("Nghe nghiep cua cha");
 		fatheroccupationfield.setForeground(Color.DARK_GRAY);
 		fatheroccupationfield.setFont(new Font("Segoe UI Emoji", Font.PLAIN, 18));
 		fatheroccupationfield.setColumns(10);
 		fatheroccupationfield.setBounds(424, 424, 400, 40);
 		getContentPane().add(fatheroccupationfield);
 
-		mothernamefield = new HintTextField(" Mother Name");
-		mothernamefield.setToolTipText("Mother Name");
+		mothernamefield = new HintTextField(" Ten me");
+		mothernamefield.setToolTipText("Ten me");
 		mothernamefield.setForeground(Color.DARK_GRAY);
 		mothernamefield.setFont(new Font("Segoe UI Emoji", Font.PLAIN, 18));
 		mothernamefield.setColumns(10);
 		mothernamefield.setBounds(10, 485, 400, 40);
 		getContentPane().add(mothernamefield);
 
-		motheroccupationfield = new HintTextField(" Mother Occupation");
-		motheroccupationfield.setToolTipText("Mother Occupation");
+		motheroccupationfield = new HintTextField(" Nghe nghiep cua me");
+		motheroccupationfield.setToolTipText("Nghe nghiep cua me");
 		motheroccupationfield.setForeground(Color.DARK_GRAY);
 		motheroccupationfield.setFont(new Font("Segoe UI Emoji", Font.PLAIN, 18));
 		motheroccupationfield.setColumns(10);
 		motheroccupationfield.setBounds(424, 485, 400, 40);
 		getContentPane().add(motheroccupationfield);
 
-		filesizenote = new JLabel("Image size  <  1024 KB");
+		filesizenote = new JLabel("Kich thuoc  <  1024 KB");
 		filesizenote.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		filesizenote.setBounds(134, 624, 545, 32);
 		getContentPane().add(filesizenote);
 
 		filesize = new JLabel("");
-		filesize.setToolTipText("Image Size");
+		filesize.setToolTipText("Kich thuoc");
 		filesize.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		filesize.setBounds(200, 544, 566, 32);
 		getContentPane().add(filesize);
 
 		profilepiclabel = new JLabel();
-		profilepiclabel.setToolTipText("Profile Picture");
+		profilepiclabel.setToolTipText("Hinh anh thong tin");
 		profilepiclabel.setBorder(new LineBorder(new Color(0, 0, 0)));
 		profilepiclabel.setFont(new Font("Segoe UI Historic", Font.PLAIN, 16));
 		profilepiclabel.setBounds(10, 536, 100, 120);
 		getContentPane().add(profilepiclabel);
 		profilepiclabel.setIcon(new ImageIcon("./assets/profilepicicon.jpg"));
 
-		choosefilebutton = new JButton("Choose File");
+		choosefilebutton = new JButton("Chon hinh");
 		choosefilebutton.addActionListener(this);
 		choosefilebutton.setFocusable(false);
 		choosefilebutton.setBackground(new Color(245, 245, 245));
@@ -317,13 +317,13 @@ public class AddStudentDialog extends JDialog implements ActionListener {
 		lblPhoto.setBounds(136, 548, 73, 21);
 		getContentPane().add(lblPhoto);
 
-		filename = new JLabel("No file choosen");
-		filename.setToolTipText("File Name");
+		filename = new JLabel("Khong hin nao duoc chon");
+		filename.setToolTipText("Ten hin");
 		filename.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		filename.setBounds(258, 582, 566, 32);
 		getContentPane().add(filename);
 
-		addstudentbutton = new JButton("Add Student");
+		addstudentbutton = new JButton("Them Sinh vien");
 		addstudentbutton.setBorder(new EmptyBorder(0, 0, 0, 0));
 		addstudentbutton.setForeground(new Color(255, 255, 255));
 		addstudentbutton.setBackground(new Color(255, 178, 170));
@@ -334,7 +334,7 @@ public class AddStudentDialog extends JDialog implements ActionListener {
 		addstudentbutton.setFocusable(false);
 		getContentPane().add(addstudentbutton);
 
-		Errorlabel = new JLabel("This is required question !");
+		Errorlabel = new JLabel("Day la cau hoi bat buoc !");
 		Errorlabel.setBorder(new MatteBorder(0, 0, 0, 0, (Color) new Color(255, 0, 0)));
 		Errorlabel.setHorizontalAlignment(SwingConstants.LEFT);
 		Errorlabel.setForeground(new Color(255, 69, 0));
@@ -368,8 +368,8 @@ public class AddStudentDialog extends JDialog implements ActionListener {
 		mothernamefield.setText(s.getMotherName());
 		motheroccupationfield.setText(s.getMotherOccupation());
 		profilepiclabel.setIcon(new ImageIcon(s.getProfilePic(100, 120)));
-		headerlabel.setText("Edit Student Details");
-		addstudentbutton.setText("Update Student");
+		headerlabel.setText("Chinh sua thong tin");
+		addstudentbutton.setText("Cap nhat");
 		courcenamecombo.setEnabled(false);
 		semoryearcombo.setEnabled(false);
 		rollnumberfield.setEditable(false);
@@ -406,7 +406,7 @@ public class AddStudentDialog extends JDialog implements ActionListener {
 		if (e.getSource() == choosefilebutton)
 		{
 
-			FileDialog fd = new FileDialog(this, "Choose a Profile pic", FileDialog.LOAD);
+			FileDialog fd = new FileDialog(this, "Chon hinh anh", FileDialog.LOAD);
 			fd.setDirectory(".\\Students Profile pic");
 			fd.setFile("*.jpeg;*.jpg;*.png;*.tiff;*.tif;*.gif;");
 			fd.setLocationRelativeTo(null);
@@ -425,7 +425,7 @@ public class AddStudentDialog extends JDialog implements ActionListener {
 					{
 						filesize.setText(bytes / 1024 + " KB");
 						filesizenote.setForeground(new Color(46, 139, 27));
-						filesizenote.setText("Image size < 1024 KB");
+						filesizenote.setText("Kich thuoc < 1024 KB");
 						Image image = ImageIO.read(file).getScaledInstance(100, 120, Image.SCALE_SMOOTH);
 						profilepiclabel.setIcon(new ImageIcon(image));
 						filename.setText(file.getName());	
@@ -434,19 +434,19 @@ public class AddStudentDialog extends JDialog implements ActionListener {
 					catch (IOException ex) {
 						file = null;
 						// TODO Auto-generated catch block
-						filename.setText("No file Choosen");
+						filename.setText("Khong hinh nao duoc chon");
 						filesize.setText("");
 						filesizenote.setForeground(Color.red);
-						filesizenote.setText("Image Not supported");
+						filesizenote.setText("Hinh anh khong duoc ho tro");
 						ex.printStackTrace();
 					}
 				} 
 				else {
 					file = null;
-					filename.setText("No File Choosen");
+					filename.setText("Khong hinh nao duoc chon");
 					filesize.setText("");
 					filesizenote.setForeground(Color.red);
-					filesizenote.setText("Image size is greater than 1 MB");
+					filesizenote.setText("Hinh anh co kich thuoc lon hon 1 MB");
 				}
 
 			}
@@ -504,7 +504,7 @@ public class AddStudentDialog extends JDialog implements ActionListener {
 			} 
 			else 
 			{
-				optionalsubjectcombo.setModel(new DefaultComboBoxModel<String>(new String[] { "No Optional Subject" }));
+				optionalsubjectcombo.setModel(new DefaultComboBoxModel<String>(new String[] { "Khong mon tu chon nao duoc chon" }));
 
 			}
 		}
@@ -532,7 +532,7 @@ public class AddStudentDialog extends JDialog implements ActionListener {
 			}
 
 			else if (optionalsubjectcombo.getSelectedIndex() == 0
-					&& !optionalsubjectcombo.getSelectedItem().toString().equals("No Optional Subject")) 
+					&& !optionalsubjectcombo.getSelectedItem().toString().equals("Khong co mon tu chon"))
 			{
 				Errorlabel.setVisible(true);
 				Errorlabel.setBounds(optionalsubjectcombo.getX(),
@@ -589,7 +589,7 @@ public class AddStudentDialog extends JDialog implements ActionListener {
 				Errorlabel.setVisible(true);
 				Errorlabel.setBounds(mothernamefield.getX() + 120, mothernamefield.getY() + mothernamefield.getHeight(),400, 26);
 			} 
-			else if (motheroccupationfield.getText().isEmpty()|| motheroccupationfield.getText().equals(" Mother Occupation")) 
+			else if (motheroccupationfield.getText().isEmpty()|| motheroccupationfield.getText().equals(" Nghe nghiep cua me"))
 			{
 				Errorlabel.setVisible(true);
 				Errorlabel.setBounds(motheroccupationfield.getX(),motheroccupationfield.getY() + motheroccupationfield.getHeight(), 400, 26);
@@ -682,12 +682,12 @@ public class AddStudentDialog extends JDialog implements ActionListener {
 
 				} catch (NumberFormatException exp) {
 					Errorlabel.setVisible(true);
-					Errorlabel.setText("Characters are not allowed!");
+					Errorlabel.setText("Ki tu khong duoc chap nhan!");
 					Errorlabel.setBounds(rollnumberfield.getX(), rollnumberfield.getY() + rollnumberfield.getHeight(),
 							400, 26);
 				} catch (RollNumberAvailableException exp) {
 					Errorlabel.setVisible(true);
-					Errorlabel.setText("RollNumber already Exist...!");
+					Errorlabel.setText("Ma sinh vien da ton tai...!");
 					Errorlabel.setBounds(rollnumberfield.getX(), rollnumberfield.getY() + rollnumberfield.getHeight(),
 							400, 26);
 					exp.printStackTrace();
@@ -708,6 +708,6 @@ public class AddStudentDialog extends JDialog implements ActionListener {
 @SuppressWarnings("serial")
 class RollNumberAvailableException extends Exception {
 	public RollNumberAvailableException() {
-		super("Roll number already available");
+		super("Ma so sinh vien da cap nhat");
 	}
 }
