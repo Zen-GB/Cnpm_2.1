@@ -69,7 +69,7 @@ public class HomePanel extends JPanel implements ActionListener {
 		totalnotificationlabel.setBounds(10, 174, 233, 35);
 		notificationpanel.add(totalnotificationlabel);
 
-		JLabel lblNotification = new JLabel("Notification");
+		JLabel lblNotification = new JLabel("Thong bao");
 		lblNotification.setFont(new Font("Segoe UI", Font.BOLD, 25));
 		lblNotification.setForeground(new Color(128, 128, 128));
 		lblNotification.setHorizontalAlignment(SwingConstants.CENTER);
@@ -93,7 +93,7 @@ public class HomePanel extends JPanel implements ActionListener {
 		totalcourcelabel.setBounds(10, 174, 233, 35);
 		courcespanel.add(totalcourcelabel);
 		
-		JLabel lblCources = new JLabel("Cources");
+		JLabel lblCources = new JLabel("Khoa");
 		lblCources.setFont(new Font("Segoe UI", Font.BOLD, 25));
 		lblCources.setForeground(new Color(128, 128, 128));
 		lblCources.setHorizontalAlignment(SwingConstants.CENTER);
@@ -119,7 +119,7 @@ public class HomePanel extends JPanel implements ActionListener {
 		totalstudentlabel.setBounds(10, 174, 233, 35);
 		studentspanel.add(totalstudentlabel);
 
-		JLabel lblStudents = new JLabel("Students");
+		JLabel lblStudents = new JLabel("Sinh vien");
 		lblStudents.setHorizontalAlignment(SwingConstants.CENTER);
 		lblStudents.setForeground(Color.GRAY);
 		lblStudents.setIcon(null);
@@ -145,7 +145,7 @@ public class HomePanel extends JPanel implements ActionListener {
 		totalfaculitieslabel.setBounds(10, 174, 233, 35);
 		faculitiespanel.add(totalfaculitieslabel);
 
-		JLabel lblFaculities = new JLabel("Faculities");
+		JLabel lblFaculities = new JLabel("Giang vien");
 		lblFaculities.setHorizontalAlignment(SwingConstants.CENTER);
 		lblFaculities.setForeground(Color.GRAY);
 		lblFaculities.setFont(new Font("Segoe UI", Font.BOLD, 25));
@@ -170,7 +170,7 @@ public class HomePanel extends JPanel implements ActionListener {
 		totallectureslabel.setBounds(10, 174, 233, 35);
 		subjectpanel.add(totallectureslabel);
 
-		JLabel lblLectures = new JLabel("Subjects");
+		JLabel lblLectures = new JLabel("Mon");
 		lblLectures.setHorizontalAlignment(SwingConstants.CENTER);
 		lblLectures.setForeground(Color.GRAY);
 		lblLectures.setFont(new Font("Segoe UI", Font.BOLD, 25));
@@ -208,7 +208,7 @@ public class HomePanel extends JPanel implements ActionListener {
 		lblHome.setBounds(10, 97, 377, 45);
 		homeheaderpanel.add(lblHome);
 
-		lastloginlabel = new JLabel("Last Login : First Login");
+		lastloginlabel = new JLabel("Lan cuoi dang nhap : lan dau");
 		lastloginlabel.setBackground(Color.WHITE);
 		lastloginlabel.setForeground(Color.WHITE);
 		lastloginlabel.setFont(new Font("Tahoma", Font.BOLD, 15));
