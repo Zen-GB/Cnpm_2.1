@@ -300,7 +300,7 @@ public class SearchPanel extends JPanel implements ActionListener {
 		panel.add(studentandfacultycombo);
 		
 		String courcename[]=new CourceData().getCourceName();
-		courcename[0]="All Cources";
+		courcename[0]="Tat ca khoa hoc";
 		courcenamecombo = new JComboBox<String>(courcename);
 		
 		courcenamecombo.setFont(new Font("Segoe UI", Font.PLAIN, 18));
@@ -315,7 +315,7 @@ public class SearchPanel extends JPanel implements ActionListener {
 		semoryearcombo.addActionListener(this);
 		panel.add(semoryearcombo);
 		
-		searchfield = new HintTextField("Search");
+		searchfield = new HintTextField("Tim kiem");
 		searchfield.setFont(new Font("Segoe UI", Font.PLAIN, 18));
 		searchfield.setForeground(Color.DARK_GRAY);
 		searchfield.setBounds(714, 129, 248, 40);
@@ -325,7 +325,7 @@ public class SearchPanel extends JPanel implements ActionListener {
 		searchbutton = new JButton();
 		searchbutton.setForeground(new Color(0, 139, 139));
 		searchbutton.setFont(new Font("Segoe UI", Font.BOLD, 15));
-		searchbutton.setText("Search");
+		searchbutton.setText("Tim kiem");
 		searchbutton.setBorder(new EmptyBorder(0, 0, 0, 0));
 		searchbutton.setBackground(new Color(255, 255, 255));
 		searchbutton.setCursor(new Cursor(Cursor.HAND_CURSOR));

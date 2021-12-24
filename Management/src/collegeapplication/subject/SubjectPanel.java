@@ -63,7 +63,7 @@ public class SubjectPanel extends JPanel implements ActionListener
 	
 		scrollPane.setVisible(true);
 		headerlabel.setBounds(10, 0, 1096, 183);
-		headerlabel.setText(" Subjects");
+		headerlabel.setText(" Mon hoc");
 		scrollPane.setBounds(10, headerlabel.getY()+headerlabel.getHeight()+20, 1096, this.getHeight()-headerlabel.getHeight()-20);
 		headerlabel.setHorizontalAlignment(JLabel.LEFT);
 		this.createtablemodel(sm.s.getCourceCode(),sm.s.getSemorYear() );
@@ -80,7 +80,7 @@ public class SubjectPanel extends JPanel implements ActionListener
 	
 		scrollPane.setVisible(true);
 		headerlabel.setBounds(10, 0, 1096, 183);
-		headerlabel.setText(" Subjects");
+		headerlabel.setText(" Mon hoc");
 		scrollPane.setBounds(10, headerlabel.getY()+headerlabel.getHeight()+20, 1096, this.getHeight()-headerlabel.getHeight()-20);
 		headerlabel.setHorizontalAlignment(JLabel.LEFT);
 		this.createtablemodel(fm.f.getCourceCode(),fm.f.getSemorYear() );
@@ -90,7 +90,7 @@ public class SubjectPanel extends JPanel implements ActionListener
 	{
 		this(fm);
 		headerlabel.setLayout(null);
-		backbutton = new JButton("Back");
+		backbutton = new JButton("Quay lai");
 		backbutton.setContentAreaFilled(false);
 		backbutton.setBorder(new EmptyBorder(0, 0, 0, 0));
 		backbutton.setIcon(new ImageIcon(".\\assets\\back.png"));
@@ -111,7 +111,7 @@ public class SubjectPanel extends JPanel implements ActionListener
 	{
 		this(sm);
 		headerlabel.setLayout(null);
-		backbutton = new JButton("Back");
+		backbutton = new JButton("Quay lai");
 		backbutton.setContentAreaFilled(false);
 		backbutton.setBorder(new EmptyBorder(0, 0, 0, 0));
 		backbutton.setIcon(new ImageIcon(".\\assets\\back.png"));
@@ -137,7 +137,7 @@ public class SubjectPanel extends JPanel implements ActionListener
 		setForeground(Color.WHITE);
 		this.setSize(1116, 705);
 		setLayout(null);
-		headerlabel = new JLabel("Subject Management");
+		headerlabel = new JLabel("Quan ly mon hoc");
 		headerlabel.setBackground(new Color(255, 178, 170));
 		headerlabel.setHorizontalAlignment(SwingConstants.CENTER);
 		headerlabel.setForeground(new Color(255, 255, 255));
@@ -146,7 +146,7 @@ public class SubjectPanel extends JPanel implements ActionListener
 		headerlabel.setOpaque(true);
 		add(headerlabel);
 		
-		selectcourcelabel = new JLabel("Select Cource  ");
+		selectcourcelabel = new JLabel("Chon khoa hoc  ");
 		selectcourcelabel.setHorizontalAlignment(SwingConstants.LEFT);
 		selectcourcelabel.setForeground(Color.DARK_GRAY);
 		selectcourcelabel.setFont(new Font("Segoe UI", Font.PLAIN, 20));
@@ -161,7 +161,7 @@ public class SubjectPanel extends JPanel implements ActionListener
 		courcenamecombo.setBounds(300, 88, 806, 42);
 		add(courcenamecombo);
 		
-		selectsemlabel = new JLabel("Select Semester/Year  ");
+		selectsemlabel = new JLabel("Chon hoc ki/nam hoc  ");
 		selectsemlabel.setHorizontalAlignment(SwingConstants.LEFT);
 		selectsemlabel.setBackground(Color.DARK_GRAY);
 		selectsemlabel.setForeground(Color.DARK_GRAY);
@@ -180,7 +180,7 @@ public class SubjectPanel extends JPanel implements ActionListener
 		
 		Courcecode=new CourceData().getCourcecode();
 		
-		addsubject = new JButton("Add New Subject");
+		addsubject = new JButton("Them mon hoc");
 		addsubject.setBorder(new EmptyBorder(0, 0, 0, 0));
 		addsubject.addActionListener(this);
 		addsubject.setForeground(new Color(255, 255, 255));
