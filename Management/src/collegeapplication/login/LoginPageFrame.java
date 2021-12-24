@@ -206,10 +206,10 @@ public class LoginPageFrame extends JFrame implements ActionListener
 
 		
 			
-			bgimagelabel = new JLabel("image");
-			bgimagelabel.setBounds(0, 11, 1380, 683);
-			contentPane.add(bgimagelabel);
-			this.setBackgroundImage();
+//			bgimagelabel = new JLabel("image");
+//			bgimagelabel.setBounds(0, 11, 1380, 683);
+//			contentPane.add(bgimagelabel);
+//			this.setBackgroundImage();
 			
 		
 		
@@ -328,7 +328,7 @@ public class LoginPageFrame extends JFrame implements ActionListener
 	{
 		try {
 			System.out.println(imagenumber);
-				Image image=ImageIO.read(new File(".//assets//image"+imagenumber+".jpg"));
+				Image image=ImageIO.read(new File(".//assets//backgroundimage"+imagenumber+".jpg"));
 			bgimagelabel.setIcon(new ImageIcon(image.getScaledInstance(bgimagelabel.getWidth(), bgimagelabel.getHeight(), Image.SCALE_SMOOTH)));
 			
 		} catch (IOException e) {
