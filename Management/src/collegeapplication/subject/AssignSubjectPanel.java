@@ -83,7 +83,7 @@ public class AssignSubjectPanel extends JPanel {
 		panel.setBounds(10, 0, 1096, 183);
 		add(panel);
 		panel.setLayout(null);
-		JLabel allfaculitieslabel = new JLabel("Subject Faculties");
+		JLabel allfaculitieslabel = new JLabel("Giang vien mon hoc");
 		allfaculitieslabel.setIcon(null);
 		allfaculitieslabel.setBounds(10, 65, 272, 44);
 		panel.add(allfaculitieslabel);
@@ -155,7 +155,7 @@ public class AssignSubjectPanel extends JPanel {
 		  {
 			  if(table.getModel().getValueAt(i,3).equals(new Integer(0)))
 			  {
-				  table.getModel().setValueAt("Not Assigned",i, 3);
+				  table.getModel().setValueAt("Chua duoc phan cong",i, 3);
 
 				  
 			  }
