@@ -328,7 +328,7 @@ public class LoginPageFrame extends JFrame implements ActionListener
 	{
 		try {
 			System.out.println(imagenumber);
-				Image image=ImageIO.read(new File(".//assets//backgroundimage"+imagenumber+".jpg"));
+				Image image=ImageIO.read(new File(".//assets//image"+imagenumber+".jpg"));
 			bgimagelabel.setIcon(new ImageIcon(image.getScaledInstance(bgimagelabel.getWidth(), bgimagelabel.getHeight(), Image.SCALE_SMOOTH)));
 			
 		} catch (IOException e) {
