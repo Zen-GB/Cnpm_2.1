@@ -83,7 +83,7 @@ public class AddCourceDialog extends JDialog implements ActionListener
 		lblCourceName.setBounds(10, 147, 139, 24);
 		getContentPane().add(lblCourceName);
 		
-		JLabel lblSemyear = new JLabel("Sem/Year");
+		JLabel lblSemyear = new JLabel("Hoc ki/ Nam hoc");
 		lblSemyear.setHorizontalAlignment(SwingConstants.LEFT);
 		lblSemyear.setFont(new Font("Segoe UI", Font.PLAIN, 17));
 		lblSemyear.setBorder(new EmptyBorder(0, 0, 0, 5));

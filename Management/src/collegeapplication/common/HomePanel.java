@@ -194,14 +194,14 @@ public class HomePanel extends JPanel implements ActionListener {
 		homeheaderpanel.setBounds(10, 0, 1096, 279);
 		add(homeheaderpanel);
 
-		welcomelabel = new JLabel("Welcome");
+		welcomelabel = new JLabel("Chao mung");
 		welcomelabel.setHorizontalAlignment(SwingConstants.RIGHT);
 		welcomelabel.setFont(new Font("Segoe UI", Font.BOLD, 30));
 		welcomelabel.setForeground(Color.WHITE);
 		welcomelabel.setBounds(10, 11, 1076, 45);
 		homeheaderpanel.add(welcomelabel);
 
-		JLabel lblHome = new JLabel("Home Page");
+		JLabel lblHome = new JLabel("Trang chu");
 		lblHome.setIcon(null);
 		lblHome.setForeground(Color.WHITE);
 		lblHome.setFont(new Font("Segoe UI", Font.BOLD, 29));
@@ -231,7 +231,7 @@ public class HomePanel extends JPanel implements ActionListener {
 		totalfaculitieslabel.setText(new FacultyData().getTotalFaculaty() + "");
 		totalstudentlabel.setText(new StudentData().getTotalStudents() + "");
 		totalcourcelabel.setText(new CourceData().getTotalCource() + "");
-		welcomelabel.setText("Welcome Adminstrator");
+		welcomelabel.setText("Chao mung Adminstrator");
 		totallectureslabel.setText(new SubjectData().getTotalSubject() + "");
 	}
 
