@@ -155,7 +155,7 @@ public class AssignSubjectPanel extends JPanel {
 		  {
 			  if(table.getModel().getValueAt(i,3).equals(new Integer(0)))
 			  {
-				  table.getModel().setValueAt("Chua duoc phan cong",i, 3);
+				  table.getModel().setValueAt("Not Assigned",i, 3);
 
 				  
 			  }
