@@ -44,9 +44,7 @@ public class AddSubjectDialog extends JDialog implements ActionListener
 	private JTable table;
 	private JLabel lblError;
 	private static AddSubjectDialog dialog;
-	/**
-	 * Launch the application.
-	 */
+
 	public static void main(String[] args) {
 		try {
 			 dialog = new AddSubjectDialog("IT",1,null);
